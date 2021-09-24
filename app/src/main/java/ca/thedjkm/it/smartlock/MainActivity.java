@@ -10,6 +10,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+//Kamaljit Mahal n01377647
 public class MainActivity extends AppCompatActivity {
 
     @Override
