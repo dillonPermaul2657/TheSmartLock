@@ -1,2 +1,2 @@
-include ':app'
+include ':TheSmartLock'
 rootProject.name = "SmartLock"
