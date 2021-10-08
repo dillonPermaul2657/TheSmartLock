@@ -1,21 +1,37 @@
 package ca.thedjkm.it.smartlock;
-//Kamaljit Mahal N01377647 Section B
-//Dillon Permaul N01372657 Section B
-//Janpreet Singh N01361405 Section B
-//Meet Gajjar N01391319 Section B
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 
+import gr.net.maroulis.library.EasySplashScreen;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
-        finish();
+
+        EasySplashScreen config = new EasySplashScreen(SplashScreenActivity.this)
+                .withFullScreen()
+                .withTargetActivity(MainActivity.class)
+                .withSplashTimeOut(5000)
+                .withBackgroundColor(Color.parseColor("#1a1b29"))
+                .withHeaderText("Header")
+                .withFooterText("Footer")
+                .withBeforeLogoText("Before Logo Text")
+                .withAfterLogoText("After Logo Text")
+                .withLogo(R.mipmap.ic_launcher_round);
+
+        config.getHeaderTextView().setTextColor(Color.WHITE);
+        config.getFooterTextView().setTextColor(Color.WHITE);
+        config.getBeforeLogoTextView().setTextColor(Color.WHITE);
+        config.getAfterLogoTextView().setTextColor(Color.WHITE);
+
+        View easySplashScreen = config.create();
+        setContentView(easySplashScreen);
     }
+
 }
