@@ -26,25 +26,26 @@
     <ImageView
         android:id="@+id/imageview1"
         android:layout_width="407dp"
-        android:layout_height="137dp"
+        android:layout_height="104dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
+        android:layout_marginStart="0dp"
         android:src="@drawable/lr" />
 
 
     <ImageView
         android:id="@+id/imageview2"
-        android:layout_width="410dp"
-        android:layout_height="137dp"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
         android:layout_below="@+id/imageview1"
         android:layout_centerInParent="true"
         android:src="@drawable/fd" />
 
     <ImageView
         android:id="@+id/imageview3"
-        android:layout_width="417dp"
-        android:layout_height="149dp"
+        android:layout_width="413dp"
+        android:layout_height="114dp"
         android:layout_below="@+id/imageview2"
         android:layout_centerInParent="true"
         android:layout_marginEnd="-3dp"
