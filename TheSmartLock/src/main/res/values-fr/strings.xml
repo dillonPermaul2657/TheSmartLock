@@ -12,7 +12,7 @@ Meet Gajjar N01391319 Section B
     <string name="title_home">Maison</string>
     <string name="title_dashboard">Tableau de bord</string>
     <string name="title_notifications">Notifications</string>
-    <string name="back_key">Voulez-vous vraiment quitter cette application ?</string>
+    <string name="back_key">Voulez-vous vraiment quitter cette application?</string>
     <string name="no">Non</string>
     <string name="yes">Oui</string>
 
