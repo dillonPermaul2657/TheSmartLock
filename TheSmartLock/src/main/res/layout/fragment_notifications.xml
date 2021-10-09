@@ -7,6 +7,16 @@
     android:background="#D3D3D3"
     tools:context=".ui.notifications.NotificationsFragment">
 
+
+    <ImageView
+        android:id="@+id/imageview4"
+        android:layout_width="400dp"
+        android:layout_height="205dp"
+        android:src="@drawable/noti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-5dp" />
+
     <TextView
         android:id="@+id/text_notifications"
         android:layout_width="match_parent"
