@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/dillo/AndroidStudioProjects/SmartLock/TheSmartLock/src/main/res/layout/fragment_dashboard.xml" value="0.3671875" />
-        <entry key="..\:/Users/dillo/AndroidStudioProjects/SmartLock/TheSmartLock/src/main/res/layout/fragment_setting.xml" value="0.17857142857142858" />
+        <entry key="..\:/sem5-app/TheSmartLock/src/main/res/layout/activity_main.xml" value="0.23550724637681159" />
+        <entry key="..\:/sem5-app/TheSmartLock/src/main/res/layout/fragment_dashboard.xml" value="0.23550724637681159" />
+        <entry key="..\:/sem5-app/TheSmartLock/src/main/res/layout/fragment_home.xml" value="0.23550724637681159" />
+        <entry key="..\:/sem5-app/TheSmartLock/src/main/res/layout/fragment_notifications.xml" value="0.23550724637681159" />
         <entry key="..\:/sem5-app/TheSmartLock/src/main/res/layout/fragment_setting.xml" value="0.1793478260869565" />
         <entry key="..\:/sem5-app/TheSmartLock/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/sem5-app/TheSmartLock/src/main/res/menu/top_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/sem5-app/TheSmartLock/src/main/res/xml/prefs.xml" value="0.23550724637681159" />
       </map>
     </option>
   </component>
