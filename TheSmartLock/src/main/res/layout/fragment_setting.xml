@@ -5,7 +5,11 @@
     android:background="#D3D3D3"
     android:layout_height="match_parent">
 
-
+    <ImageView
+        android:id="@+id/imageview5"
+        android:layout_width="413dp"
+        android:layout_height="166dp"
+        android:src="@drawable/setting" />
     
     
 </androidx.constraintlayout.widget.ConstraintLayout>
