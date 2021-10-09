@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rlVar1"
+    android:background="#D3D3D3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D3D3D3"
+
     tools:context=".ui.dashboard.DashboardFragment">
 
 
@@ -13,18 +14,50 @@
         android:id="@+id/tvVar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview3"
+        android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="8dp"
         android:text="Lock or Unlock?"
         android:textSize="30dp"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvVar1"
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="407dp"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="60dp"
+        android:src="@drawable/lr" />
+
+
+    <ImageView
+        android:id="@+id/imageview2"
+        android:layout_width="410dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/imageview1"
+        android:layout_centerInParent="true"
+        android:src="@drawable/fd" />
+
+    <ImageView
+        android:id="@+id/imageview3"
+        android:layout_width="417dp"
+        android:layout_height="149dp"
+        android:layout_below="@+id/imageview2"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="-3dp"
+        android:src="@drawable/g" />
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="161dp"
+        android:layout_below="@+id/tvVar1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="28dp"
         android:orientation="horizontal"
         android:padding="10dp">
 
@@ -41,16 +74,16 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="142dp"
-        android:layout_height="130dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="84dp"
+            android:id="@+id/imageButton2"
+            android:layout_width="142dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="84dp"
 
-        android:src="@drawable/unlock"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            android:src="@drawable/unlock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
 
 </RelativeLayout>
