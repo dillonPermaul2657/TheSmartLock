@@ -15,5 +15,12 @@ Meet Gajjar N01391319 Section B
     <string name="back_key">Voulez-vous vraiment quitter cette application?</string>
     <string name="no">Non</string>
     <string name="yes">Oui</string>
+    <string name="title_activity_splash_screen">Activité sur l\'écran de démarrage</string>
+    <string name="hello_world">Bonjour le monde carré !</string>
+    <string name="title_setting">Paramètres</string>
+    <string name="Brightness_level">niveau de luminosité</string>
+    <string name="value_percentage">20%</string>
+    <string name="motion_capture">Capture de mouvement</string>
+    <string name="forth_screen">Mouvement</string>
 
 </resources>
