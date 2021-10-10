@@ -22,5 +22,9 @@ Meet Gajjar N01391319 Section B
     <string name="value_percentage">20%</string>
     <string name="motion_capture">Capture de mouvement</string>
     <string name="forth_screen">Mouvement</string>
+    <string name="welcome_home">Bienvenue dans la serrure intelligente!</string>
+    <string name="Permision_req_txt">Demander la permission</string>
+    <string name="Welcome_txt">Bienvenue dans la serrure intelligente!</string>
+    <string name="permission_text">Demander la permission</string>
 
 </resources>
