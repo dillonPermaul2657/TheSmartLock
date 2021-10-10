@@ -2,8 +2,6 @@ package ca.thedjkm.it.smartlock.ui.setting;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -20,7 +18,7 @@ public class MotionFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        // return super.onCreateView(inflater, container, savedInstanceState);
 
-        View root = inflater.inflate(R.layout.fragment_setting,container,false);
+        View root = inflater.inflate(R.layout.fragment_motion,container,false);
 
         return root;
     }
