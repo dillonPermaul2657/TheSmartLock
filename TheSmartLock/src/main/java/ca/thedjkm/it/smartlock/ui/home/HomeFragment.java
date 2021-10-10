@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment {
 
     TextView textViewDate;
     TextView textView;
-    private int STORAGE_PERMISSION_CODE = 1;
+    private final int STORAGE_PERMISSION_CODE = 1;
     Button buttonRequest;
 
     @Override
@@ -47,7 +47,20 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        buttonRequest = (Button) view.findViewById(R.id.button);
+        //code for animated text, does not work for some reason at the moment
+        textView = (TextView) view.findViewById(R.id.marquee);
+        textView.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+        textView.setSelected(true);
+
+        //code to show the current date and time
+        textViewDate = (TextView) view.findViewById(R.id.text_view_date);
+
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss a");
+        String dateTime = simpleDateFormat.format(calendar.getTime());
+        textViewDate.setText(dateTime);
+
+        buttonRequest = view.findViewById(R.id.button);
         buttonRequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,7 +78,7 @@ public class HomeFragment extends Fragment {
                         Manifest.permission.READ_EXTERNAL_STORAGE)) {
                     new AlertDialog.Builder(getActivity())
                             .setTitle("Permission needed")
-                            .setMessage("This permission is needed because of this and that")
+                            .setMessage("We need permissions to access your storage")
                             .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -86,28 +99,12 @@ public class HomeFragment extends Fragment {
                 }
             }
 
-
-
             private void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
                 if (requestCode == STORAGE_PERMISSION_CODE) {
                     if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                         Toast.makeText(getActivity(), "Permission GRANTED", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(getActivity(), "Permission DENIED", Toast.LENGTH_SHORT).show();
-
-
-                        //code for animated text, does not work for some reason at the moment
-                        textView = (TextView) view.findViewById(R.id.marquee);
-                        textView.setEllipsize(TextUtils.TruncateAt.MARQUEE);
-                        textView.setSelected(true);
-
-                        //code to show the current date and time
-                        textViewDate = (TextView) view.findViewById(R.id.text_view_date);
-
-                        Calendar calendar = Calendar.getInstance();
-                        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss a");
-                        String dateTime = simpleDateFormat.format(calendar.getTime());
-                        textViewDate.setText(dateTime);
 
                     }
                 }
@@ -116,6 +113,9 @@ public class HomeFragment extends Fragment {
         return view;
     }
 }
+
+
+
 
 
 
