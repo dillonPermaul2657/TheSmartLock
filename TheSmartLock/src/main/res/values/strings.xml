@@ -22,5 +22,9 @@ Meet Gajjar N01391319 Section B
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_setting">Settings</string>
+    <string name="Brightness_level">Brightness level</string>
+    <string name="value_percentage">20%</string>
+    <string name="motion_capture">Motion Capture</string>
+    <string name="forth_screen">Motion</string>
 
 </resources>

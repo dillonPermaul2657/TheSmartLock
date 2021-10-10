@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import ca.thedjkm.it.smartlock.R;
 
-public class forthFragment extends Fragment {
+public class MotionFragment extends Fragment {
 
     @Nullable
     @Override
