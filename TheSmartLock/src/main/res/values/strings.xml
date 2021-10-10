@@ -21,4 +21,9 @@ Meet Gajjar N01391319 Section B
     <string name="motion_capture">Motion Capture</string>
     <string name="forth_screen">Motion</string>
 
+    <string name="welcome_to_the_smart_lock">Welcome to the Smart Lock</string>
+    <string name="request_permission">Request Permission</string>
+    <string name="lock_or_unlock">Lock or Unlock</string>
+    <string name="togglebutton">ToggleButton</string>
+
 </resources>

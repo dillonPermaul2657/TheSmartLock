@@ -23,4 +23,9 @@ Meet Gajjar N01391319 Section B
     <string name="motion_capture">Capture de mouvement</string>
     <string name="forth_screen">Mouvement</string>
 
+    <string name="welcome_to_the_smart_lock">Bienvenue dans la serrure intelligente</string>
+    <string name="request_permission">Demander la permission</string>
+    <string name="lock_or_unlock">Verrouiller ou déverrouiller</string>
+    <string name="togglebutton">Bouton à bascule</string>
+
 </resources>

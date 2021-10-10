@@ -21,7 +21,7 @@
         android:layout_marginTop="-4dp"
         android:textColor="@android:color/holo_red_light"
         android:typeface="serif"
-        android:text="Lock or Unlock?"
+        android:text="@string/lock_or_unlock"
         android:textSize="30dp"
         android:textStyle="bold" />
 
