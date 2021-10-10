@@ -17,8 +17,8 @@
         android:layout_below="@+id/imageview3"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="-4dp"
         android:text="Lock or Unlock?"
         android:textSize="30dp"
         android:textStyle="bold" />
@@ -30,9 +30,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-7dp"
         android:src="@drawable/lr" />
-
 
     <ImageView
         android:id="@+id/imageview2"
