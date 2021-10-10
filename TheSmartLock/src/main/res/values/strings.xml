@@ -18,10 +18,7 @@ Meet Gajjar N01391319 Section B
     <string name="title_setting">Settings</string>
     <string name="Brightness_level">Brightness level</string>
     <string name="value_percentage">20%</string>
-    <string name="motion_capture">Motion Sensor</string>
+    <string name="motion_capture">Motion Capture</string>
     <string name="forth_screen">Motion</string>
-    <string name="Notification_messge">Enable message notifications</string>
-    <string name="Notification_label">Notification</string>
-    <string name="switchpreference">switch_preference</string>
 
 </resources>
