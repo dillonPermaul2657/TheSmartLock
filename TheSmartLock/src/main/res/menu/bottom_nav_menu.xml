@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/navigation_Setting"
-        android:icon="@drawable/outline_settings_black_24dp"
-      android:title="4th screen" />
+        android:icon="@drawable/m1"
+      android:title="@string/forth_screen" />
 
 </menu>

@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_Setting"
-        android:name="ca.thedjkm.it.smartlock.ui.setting.forthFragment"
+        android:name="ca.thedjkm.it.smartlock.ui.setting.MotionFragment"
         android:label="@string/title_setting"
         tools:layout="@layout/fragment_setting" />
 
