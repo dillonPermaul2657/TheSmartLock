@@ -5,7 +5,8 @@
 
     <item
         android:id="@+id/navigation_Setting"
-        android:icon="@drawable/outline_settings_black_24dp"
+
+        android:icon="@drawable/setting"
         android:title="@string/title_setting"
         app:showAsAction="always"
         />

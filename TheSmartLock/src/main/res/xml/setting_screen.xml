@@ -42,9 +42,9 @@
         android:title="Alerts"
         >
         <SwitchPreference
-            android:key=""
-            android:title=""
-            android:summary=""
+            android:key="@string/switchpreference"
+            android:title="@string/Notification_label"
+            android:summary="@string/Notification_messge"
             />
 
     </PreferenceCategory>
