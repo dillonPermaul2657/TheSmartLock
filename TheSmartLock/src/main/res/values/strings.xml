@@ -18,7 +18,7 @@ Meet Gajjar N01391319 Section B
     <string name="title_setting">Settings</string>
     <string name="Brightness_level">Brightness level</string>
     <string name="value_percentage">20%</string>
-    <string name="motion_capture">Motion Capture</string>
+    <string name="motion_capture">Motion Sensor</string>
     <string name="forth_screen">Motion</string>
     <string name="switchpreference">Switch_notification</string>
     <string name="Notification_label">Notification</string>
@@ -27,6 +27,7 @@ Meet Gajjar N01391319 Section B
     <string name="welcome_to_the_smart_lock">Welcome to the Smart Lock</string>
     <string name="request_permission">Request Permission</string>
     <string name="lock_or_unlock">Lock or Unlock</string>
-    <string name="togglebutton">ToggleButton</string>
+    <string name="togglebutton">TURN OFF MOTION SENSOR</string>
+    <string name="Motion_Reading"> Motion Count: </string>
 
 </resources>
