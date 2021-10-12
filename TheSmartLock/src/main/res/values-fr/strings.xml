@@ -28,4 +28,9 @@ Meet Gajjar N01391319 Section B
     <string name="lock_or_unlock">Verrouiller ou déverrouiller</string>
     <string name="togglebutton">Bouton à bascule</string>
 
+    <string name="switchpreference">Switch_notification</string>
+    <string name="Notification_label">Notification</string>
+    <string name="Notification_messge">Activer la notification</string>
+    <string name="Motion_Reading"> Nombre de mouvements : </string>
+
 </resources>
