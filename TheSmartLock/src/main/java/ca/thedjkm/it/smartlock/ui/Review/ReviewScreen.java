@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import ca.thedjkm.it.smartlock.R;
-
+// Kamaljit Mahal N01377647 Section B
+// Dillon Permaul N01372657 Section B
+// Janpreet Singh N01361405 Section B
+// Meet Gajjar N01391319 Section B
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link ReviewScreen#newInstance} factory method to
