@@ -20,5 +20,11 @@
         android:id="@+id/navigation_Setting"
         android:icon="@drawable/motion_icon"
       android:title="@string/forth_screen" />
+    <item
+        android:id="@+id/navigation_Review"
+        android:icon="@drawable/review"
+        android:title="@string/fifth_screen" />
+
+
 
 </menu>

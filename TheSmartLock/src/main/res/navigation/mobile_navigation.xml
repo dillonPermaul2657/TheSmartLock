@@ -29,4 +29,10 @@
         android:label="@string/title_setting"
         tools:layout="@layout/fragment_motion" />
 
+    <fragment
+        android:id="@+id/navigation_Review"
+        android:name="ca.thedjkm.it.smartlock.ui.Review.ReviewScreen"
+        android:label="@string/title_review"
+        tools:layout="@layout/fragment_review_screen" />
+
 </navigation>

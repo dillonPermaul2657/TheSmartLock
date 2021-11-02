@@ -31,5 +31,8 @@ Meet Gajjar N01391319 Section B
     <string name="Motion_Reading"> Motion Count: </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_review">Review</string>
+    <string name="Review">FifthScreen</string>
+    <string name="fifth_screen">Review</string>
 
 </resources>
