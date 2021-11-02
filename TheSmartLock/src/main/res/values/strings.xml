@@ -29,5 +29,7 @@ Meet Gajjar N01391319 Section B
     <string name="lock_or_unlock">Lock or Unlock</string>
     <string name="togglebutton">TURN OFF MOTION SENSOR</string>
     <string name="Motion_Reading"> Motion Count: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
