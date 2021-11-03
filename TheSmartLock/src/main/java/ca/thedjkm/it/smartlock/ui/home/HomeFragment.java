@@ -3,6 +3,8 @@
 //Janpreet Singh N01361405 Section B
 //Meet Gajjar N01391319 Section B
 
+//Real time is displayed as well as a FULLY working runtime permission.
+//@author Kamaljit Mahal
 package ca.thedjkm.it.smartlock.ui.home;
 
 import android.Manifest;
