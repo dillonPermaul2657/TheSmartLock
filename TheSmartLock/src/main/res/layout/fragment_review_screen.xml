@@ -3,14 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D3D3D3"
     tools:context=".ui.Review.ReviewScreen">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <RatingBar
+        android:id="@+id/simpleRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#0f9"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:rating="2" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:background="#f44"
+        android:padding="10dp"
+        android:text="@string/submit_btn_txt"
+        android:textColor="#fff"
         android:textSize="20sp"
-        android:text="Customer Review Screen" />
+        android:textStyle="bold" />
 
 </RelativeLayout>

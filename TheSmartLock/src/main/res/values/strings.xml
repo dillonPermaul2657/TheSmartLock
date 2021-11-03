@@ -34,5 +34,6 @@ Meet Gajjar N01391319 Section B
     <string name="title_review">Review</string>
     <string name="Review">FifthScreen</string>
     <string name="fifth_screen">Review</string>
+    <string name="submit_btn_txt">Submit</string>
 
 </resources>
