@@ -10,8 +10,10 @@
         android:id="@+id/simpleRatingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/submitButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
+        android:layout_marginBottom="23dp"
         android:background="#0f9"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -21,12 +23,70 @@
         android:id="@+id/submitButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
+        android:layout_marginBottom="126dp"
         android:background="#f44"
         android:padding="10dp"
         android:text="@string/submit_btn_txt"
         android:textColor="#fff"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/name_string"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#A4C639"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/email_string"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0099FF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-191dp"
+        android:layout_marginBottom="257dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#CCCCCC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"></EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-176dp"
+        android:layout_marginBottom="-59dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#CCCCCC"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"></EditText>
 
 </RelativeLayout>

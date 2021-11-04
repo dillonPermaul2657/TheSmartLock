@@ -54,13 +54,13 @@
         android:src="@drawable/g" />
 
     <LinearLayout
-        android:layout_width="382dp"
-        android:layout_height="172dp"
+        android:layout_width="363dp"
+        android:layout_height="207dp"
         android:layout_below="@+id/tvVar1"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginBottom="169dp"
         android:orientation="horizontal"
         android:padding="10dp">
 

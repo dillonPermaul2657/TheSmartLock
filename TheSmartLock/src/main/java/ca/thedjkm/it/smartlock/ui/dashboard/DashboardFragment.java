@@ -6,7 +6,10 @@
 
 package ca.thedjkm.it.smartlock.ui.dashboard;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -61,12 +64,9 @@ public class DashboardFragment extends Fragment {
 
             }
         });
-
         return view;
 
     }
-
-
 
 
 }

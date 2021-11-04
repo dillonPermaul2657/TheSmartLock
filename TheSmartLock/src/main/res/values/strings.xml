@@ -35,5 +35,7 @@ Meet Gajjar N01391319 Section B
     <string name="Review">FifthScreen</string>
     <string name="fifth_screen">Review</string>
     <string name="submit_btn_txt">Submit</string>
+    <string name="name_string">Enter Your Name</string>
+    <string name="email_string">Enter your email</string>
 
 </resources>
