@@ -48,6 +48,8 @@ public class DashboardFragment extends Fragment {
         relativeLayout = (RelativeLayout) view.findViewById(R.id.rlVar1);
 
         lockButton1.setOnClickListener(new View.OnClickListener() {
+
+            /* The Behavioral pattern of State is used to alter the behavior of the door status */
             @Override
             public void onClick(View v) {
                 relativeLayout.setBackgroundResource(R.color.red);
