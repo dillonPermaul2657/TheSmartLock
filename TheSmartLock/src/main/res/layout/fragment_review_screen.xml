@@ -7,7 +7,7 @@
     tools:context=".ui.Review.ReviewScreen">
 
     <RatingBar
-        android:id="@+id/simpleRatingBar"
+        android:id="@+id/RatingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/submitButton"
