@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "804376096842",
+    "firebase_url": "https://thesmartlock-d84bb-default-rtdb.firebaseio.com",
+    "project_id": "thesmartlock-d84bb",
+    "storage_bucket": "thesmartlock-d84bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804376096842:android:18f78b96eed4e2ef1fb6b3",
+        "android_client_info": {
+          "package_name": "ca.thedjkm.it.smartlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804376096842-j4oa81vpcfs22558relqr6qs19u28pap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW-0KZL74YV1V4qK0rUCKjOmQFoHpi6hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804376096842-j4oa81vpcfs22558relqr6qs19u28pap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
