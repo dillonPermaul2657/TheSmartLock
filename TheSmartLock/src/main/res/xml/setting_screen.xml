@@ -56,12 +56,7 @@
         android:key="languages"
         android:title="Language">
 
-        <ListPreference
-            android:defaultValue="false"
-            android:key="Choose_Language"
-            android:entries="@array/items_lang"
-            android:entryValues="@array/items_value_lang"
-            android:title="Choose Language" />
+
 
     </PreferenceCategory>
 
