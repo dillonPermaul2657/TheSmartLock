@@ -40,9 +40,8 @@ public class ReviewScreen extends Fragment {
                 // get values and then displayed in a toast
                 String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
                 String rating = "Rating :: " + simpleRatingBar.getRating();
-                Toast.makeText(getContext().getApplicationContext(), totalStars + "\n" + rating, Toast.LENGTH_LONG).show();
                 Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
-                        "Snackbar under construction", Snackbar.LENGTH_LONG);
+                        totalStars + "\n" + rating, Snackbar.LENGTH_LONG);
                 snackBar.show();
             }
         });
