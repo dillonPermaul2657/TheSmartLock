@@ -1,5 +1,9 @@
 plugins {
     id 'com.android.application'
+
+
+    id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -45,5 +49,6 @@ dependencies {
     compileOnly 'com.google.android.wearable:wearable:2.6.0'
     implementation platform('com.google.firebase:firebase-bom:28.4.2')
     implementation 'com.google.firebase:firebase-database'
+
 
 }
