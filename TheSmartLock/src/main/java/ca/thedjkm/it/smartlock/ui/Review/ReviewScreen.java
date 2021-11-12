@@ -2,68 +2,50 @@ package ca.thedjkm.it.smartlock.ui.Review;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import ca.thedjkm.it.smartlock.R;
 // Kamaljit Mahal N01377647 Section B
 // Dillon Permaul N01372657 Section B
 // Janpreet Singh N01361405 Section B
 // Meet Gajjar N01391319 Section B
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ReviewScreen#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ReviewScreen extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // return super.onCreateView(inflater, container, savedInstanceState);
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+        View view = inflater.inflate(R.layout.fragment_review_screen,container,false);
 
-    public ReviewScreen() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ReviewScreen.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ReviewScreen newInstance(String param1, String param2) {
-        ReviewScreen fragment = new ReviewScreen();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_review_screen, container, false);
+        // initiate rating bar and a button
+        final RatingBar simpleRatingBar = (RatingBar) view.findViewById(R.id.RatingBar);
+        Button submitButton = (Button) view.findViewById(R.id.submitButton);
+        // perform click event on button
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // get values and then displayed in a toast
+                String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
+                String rating = "Rating :: " + simpleRatingBar.getRating();
+                Toast.makeText(getContext().getApplicationContext(), totalStars + "\n" + rating, Toast.LENGTH_LONG).show();
+                Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
+                        "Snackbar under construction", Snackbar.LENGTH_LONG);
+                snackBar.show();
+            }
+        });
+        return view;
     }
 }
