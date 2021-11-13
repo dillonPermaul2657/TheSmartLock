@@ -64,7 +64,7 @@
 
     <!-- Created a textview that would display the temperature and humidity from the humidity sensor -->
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Sensor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="172dp"
