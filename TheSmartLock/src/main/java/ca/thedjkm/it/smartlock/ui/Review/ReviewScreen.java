@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -33,18 +34,46 @@ public class ReviewScreen extends Fragment {
         // initiate rating bar and a button
         final RatingBar simpleRatingBar = (RatingBar) view.findViewById(R.id.RatingBar);
         Button submitButton = (Button) view.findViewById(R.id.submitButton);
+        final EditText edit_name = view.findViewById(R.id.editText1);
+        final  EditText edit_email = view.findViewById(R.id.editText2);
+        DAOReview doa = new DAOReview();
+        submitButton.setOnClickListener(v ->
+                {
+
+                    ReviewData rev = new ReviewData(edit_name.getText().toString(),edit_email.getText().toString());
+                    doa.add(rev).addOnSuccessListener(suc ->
+
+                    {
+
+                        Toast.makeText(getActivity(),"Insterted",Toast.LENGTH_SHORT).show();
+                    }).addOnFailureListener(er ->
+
+                    {
+
+                        Toast.makeText(getActivity(),""+er.getMessage(),Toast.LENGTH_SHORT).show();
+
+
+                    }
+
+
+
+                    );
+
+                }
+
+                );
         // perform click event on button
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+       // submitButton.setOnClickListener(new View.OnClickListener() {
+         //   @Override
+          //  public void onClick(View v) {
                 // get values and then displayed in a toast
-                String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
-                String rating = "Rating :: " + simpleRatingBar.getRating();
-                Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
-                        totalStars + "\n" + rating, Snackbar.LENGTH_LONG);
-                snackBar.show();
-            }
-        });
+            //   String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
+               // String rating = "Rating :: " + simpleRatingBar.getRating();
+            //    Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
+                 //       totalStars + "\n" + rating, Snackbar.LENGTH_LONG);
+             //   snackBar.show();
+          //  }
+       // });
         return view;
     }
 }
