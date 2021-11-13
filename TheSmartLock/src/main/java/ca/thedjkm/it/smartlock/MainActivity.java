@@ -73,16 +73,38 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
+//        switch (item.getItemId()){
+//
+//            case R.id.Setting_1:
+//                Intent i = new Intent(this, Preference.class);
+//                startActivity(i);
+//
+//            case R.id.help_menu:
+//                Intent j = new Intent(, Help.class);
+//                startActivity(j);
+//
+//        }
 
-            case R.id.navigation_Setting:
-                Intent i = new Intent(this, Preference.class);
-                startActivity(i);
-
+        int id = item.getItemId();
+        if (id == R.id.Setting_1){
+            Intent i = new Intent(MainActivity.this,Preference.class);
+            startActivity(i);
+            return true;
         }
 
+        if (id == R.id.help_menu){
+            Intent i = new Intent(MainActivity.this,Help.class);
+            startActivity(i);
+            return true;
+        }
+
+        if (id == R.id.about_menu){
+            Intent i = new Intent(MainActivity.this,About.class);
+            startActivity(i);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

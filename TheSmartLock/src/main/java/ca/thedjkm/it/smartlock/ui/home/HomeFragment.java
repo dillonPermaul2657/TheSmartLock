@@ -10,8 +10,13 @@ package ca.thedjkm.it.smartlock.ui.home;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.text.Layout;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +27,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -39,6 +45,9 @@ import ca.thedjkm.it.smartlock.R;
 
 public class HomeFragment extends Fragment {
 
+    private ConstraintLayout m1;
+    private TextView marquee;
+
     TextView textViewDate;
     TextView textView;
     private final int STORAGE_PERMISSION_CODE = 1;
@@ -54,8 +63,14 @@ public class HomeFragment extends Fragment {
         textView.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         textView.setSelected(true);
 
+
         //code to show the current date and time
         textViewDate = (TextView) view.findViewById(R.id.text_view_date);
+
+
+        marquee = view.findViewById(R.id.marquee);
+        m1 = view.findViewById(R.id.mlaout);
+        Load_setting();
 
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss a");
@@ -63,6 +78,9 @@ public class HomeFragment extends Fragment {
         textViewDate.setText(dateTime);
 
         buttonRequest = view.findViewById(R.id.button);
+
+
+
         buttonRequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,8 +129,50 @@ public class HomeFragment extends Fragment {
                     }
                 }
             }
+
+
+
+
+
+
+
+
+
         });
         return view;
+    }
+
+    private void Load_setting() {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
+//        boolean chk_night = sp.getBoolean("NIGHT", false);
+//        if (chk_night) {
+//            m1.setBackgroundColor(Color.parseColor("#222222"));
+//            marquee.setTextColor(Color.parseColor("#ffffff"));
+//
+//        } else {
+//            m1.setBackgroundColor(Color.parseColor("#FFFFFF"));
+//            marquee.setTextColor(Color.parseColor("#000000"));
+//        }
+
+
+        String orien = sp.getString("ORIENTATION", "false");
+        if ("1".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
+
+        } else if ("2".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        } else if ("3".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        }
+    }
+
+    @Override
+    public void onResume() {
+        Load_setting();
+        super.onResume();
     }
 }
 

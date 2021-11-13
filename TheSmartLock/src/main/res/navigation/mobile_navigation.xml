@@ -29,6 +29,8 @@
         android:label="@string/title_setting"
         tools:layout="@layout/fragment_motion" />
 
+
+
     <fragment
         android:id="@+id/navigation_Review"
         android:name="ca.thedjkm.it.smartlock.ui.Review.ReviewScreen"
