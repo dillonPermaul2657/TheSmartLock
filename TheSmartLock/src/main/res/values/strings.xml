@@ -40,7 +40,5 @@ Meet Gajjar N01391319 Section B
     <string name="String_phone_number">Phone Number</string>
     <string name="About_us_paragraph">This is a home security smart lock that can be unlocked and locked using a mobile device and a RFID Card. This can be used in people’s everyday lives as many people tend to lose their keys or the combinations to locks. This smart lock is very convenient and user friendly as all you need to unlock the lock is either your mobile device or an RFID Card.
 </string>
-    <string name="on_btn">ON</string>
-    <string name="off_btn">OFF</string>
 
 </resources>
