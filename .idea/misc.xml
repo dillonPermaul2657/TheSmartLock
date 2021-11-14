@@ -3,12 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/activity_about.xml" value="0.25416666666666665" />
-        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/activity_help.xml" value="0.25416666666666665" />
-        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
-        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_home.xml" value="0.1793478260869565" />
-        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_motion.xml" value="0.4" />
-        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_review_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Kmaha/AndroidStudioProjects/TheSmartLock/TheSmartLock/src/main/res/layout-land/fragment_home.xml" value="0.31128747795414463" />
         <entry key="..\:/Users/Kmaha/AndroidStudioProjects/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_home.xml" value="0.36770833333333336" />
         <entry key="..\:/Users/Kmaha/AndroidStudioProjects/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_review_screen.xml" value="0.36770833333333336" />
