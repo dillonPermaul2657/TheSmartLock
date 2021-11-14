@@ -150,11 +150,11 @@ public class HomeFragment extends Fragment {
 //        boolean chk_night = sp.getBoolean("NIGHT", false);
 //        if (chk_night) {
 //            m1.setBackgroundColor(Color.parseColor("#222222"));
-//            marquee.setTextColor(Color.parseColor("#ffffff"));
+//         //   marquee.setTextColor(Color.parseColor("#ffffff"));
 //
 //        } else {
 //            m1.setBackgroundColor(Color.parseColor("#ffffff"));
-//            marquee.setTextColor(Color.parseColor("#000000"));
+//          //  marquee.setTextColor(Color.parseColor("#000000"));
 //        }
 
 
@@ -169,6 +169,11 @@ public class HomeFragment extends Fragment {
             getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         }
+
+
+
+
+
     }
 
     @Override
