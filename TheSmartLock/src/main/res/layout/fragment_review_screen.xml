@@ -6,17 +6,6 @@
     android:background="#D3D3D3"
     tools:context=".ui.Review.ReviewScreen">
 
-    <RatingBar
-        android:id="@+id/RatingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignWithParentIfMissing="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginBottom="428dp"
-        android:rating="2" />
-
     <Button
         android:id="@+id/submitButton"
         android:layout_width="200dp"
@@ -71,13 +60,15 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="194dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="134dp"
-        android:layout_marginBottom="386dp"
-        android:text="@string/string_feedback"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="337dp"
+        android:text="Feedback"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#0099FF"
         android:textSize="20sp" />
@@ -126,15 +117,17 @@
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="326dp"
-        android:layout_height="256dp"
+        android:layout_width="351dp"
+        android:layout_height="163dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="147dp"
         android:background="#CCCCCC"
-        android:gravity="top|left"
         android:ems="10"
+        android:gravity="top|left"
         android:textSize="20sp"></EditText>
 
 

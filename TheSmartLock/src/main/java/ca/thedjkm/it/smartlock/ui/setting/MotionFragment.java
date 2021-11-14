@@ -28,6 +28,8 @@ public class MotionFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_motion,container,false);
         Button btn=(Button) root.findViewById(R.id.ON);
+        Button btn2=(Button) root.findViewById(R.id.OFF);
+
 
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +39,12 @@ public class MotionFragment extends Fragment {
             }
         });
 
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Motion sensor is OFF", LENGTH_SHORT).show();
+            }
+        });
 
         return root;
     }

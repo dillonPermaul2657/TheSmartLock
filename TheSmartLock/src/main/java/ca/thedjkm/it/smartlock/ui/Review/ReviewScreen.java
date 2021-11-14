@@ -32,7 +32,7 @@ public class ReviewScreen extends Fragment {
         View view = inflater.inflate(R.layout.fragment_review_screen,container,false);
 
         // initiate rating bar and a button
-        final RatingBar simpleRatingBar = (RatingBar) view.findViewById(R.id.RatingBar);
+       // final RatingBar simpleRatingBar = (RatingBar) view.findViewById(R.id.RatingBar);
         Button submitButton = (Button) view.findViewById(R.id.submitButton);
         final EditText edit_name = view.findViewById(R.id.editText1);
         final  EditText edit_email = view.findViewById(R.id.editText2);
@@ -43,19 +43,19 @@ public class ReviewScreen extends Fragment {
         submitButton.setOnClickListener(v ->
                 {
                     ReviewData rev = new ReviewData(edit_name.getText().toString(),edit_email.getText().toString());
-                    doa.add(rev).addOnSuccessListener(suc ->
-                    {
-                        // get values and then displayed in a toast
-                           String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
-                        String rating = "Rating :: " + simpleRatingBar.getRating();
-                            Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
-                               totalStars + "\n" + rating, Snackbar.LENGTH_LONG);
-                           snackBar.show();
-                    }).addOnFailureListener(er ->
-                    {
-                        Toast.makeText(getActivity(),""+er.getMessage(),Toast.LENGTH_SHORT).show();
-                    }
-                    );
+//                    doa.add(rev).addOnSuccessListener(suc ->
+//                    {
+//                        // get values and then displayed in a toast
+//                          // String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
+//                        String rating = "Rating :: " + simpleRatingBar.getRating();
+//                            Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
+//                               totalStars + "\n" + rating, Snackbar.LENGTH_LONG);
+//                           snackBar.show();
+//                    }).addOnFailureListener(er ->
+//                    {
+//                        Toast.makeText(getActivity(),""+er.getMessage(),Toast.LENGTH_SHORT).show();
+//                    }
+                //    );
                     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
                     String pattern = "^\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*$";
                     if(edit_name.equals("") || edit_name.equals(null)) {
