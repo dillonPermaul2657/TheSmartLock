@@ -42,5 +42,10 @@ Meet Gajjar N01391319 Section B
 </string>
     <string name="on_button_1">ON</string>
     <string name="off_button2">OFF</string>
+    <string name="help_page"> If you having problem with SmartLock app you can contact us by sending email or calling our technical support team</string>
+    <string name="Email_helppage"> SmartLockSupportTeam@gmail.com</string>
+    <string name="help_title">Help</string>
+    <string name="email_tag">Email:</string>
+    <string name="num_tag">+1(647)482-9871</string>
 
 </resources>
