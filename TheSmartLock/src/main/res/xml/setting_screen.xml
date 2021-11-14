@@ -14,14 +14,14 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="Screen Orientataion">
+    <PreferenceCategory android:title="Screen Orientation">
 
         <ListPreference
             android:defaultValue="false"
             android:key="ORIENTATION"
             android:entries="@array/items_menu"
             android:entryValues="@array/items_value"
-            android:title="orientataion" />
+            android:title="Orientation" />
 
 
 
@@ -52,12 +52,5 @@
     </PreferenceCategory>
 
 
-    <PreferenceCategory
-        android:key="languages"
-        android:title="Language">
-
-
-
-    </PreferenceCategory>
 
 </PreferenceScreen>
