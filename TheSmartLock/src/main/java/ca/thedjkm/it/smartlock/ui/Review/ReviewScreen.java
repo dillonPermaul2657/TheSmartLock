@@ -36,16 +36,15 @@ public class ReviewScreen extends Fragment {
         Button submitButton = (Button) view.findViewById(R.id.submitButton);
         final EditText edit_name = view.findViewById(R.id.editText1);
         final  EditText edit_email = view.findViewById(R.id.editText2);
+        final  EditText edit_phone = view.findViewById(R.id.editText3);
+        final  EditText edit_feedback = view.findViewById(R.id.editText2);
+
         DAOReview doa = new DAOReview();
         submitButton.setOnClickListener(v ->
                 {
-
                     ReviewData rev = new ReviewData(edit_name.getText().toString(),edit_email.getText().toString());
                     doa.add(rev).addOnSuccessListener(suc ->
-
                     {
-
-
                         // get values and then displayed in a toast
                            String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
                         String rating = "Rating :: " + simpleRatingBar.getRating();
@@ -53,20 +52,27 @@ public class ReviewScreen extends Fragment {
                                totalStars + "\n" + rating, Snackbar.LENGTH_LONG);
                            snackBar.show();
                     }).addOnFailureListener(er ->
-
                     {
-
                         Toast.makeText(getActivity(),""+er.getMessage(),Toast.LENGTH_SHORT).show();
-
-
+                    }
+                    );
+                    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+                    String pattern = "^\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*$";
+                    if(edit_name.equals("") || edit_name.equals(null)) {
+                        edit_name.setError("Username can't be empty");
+                        return;
+                    } else if (edit_email.equals("") || edit_email.equals(null)) {
+                        edit_email.setError("Please enter right email Address");
+                        return;
+                    }
+                    else if (edit_phone.equals("") ||edit_phone.equals(null)||edit_phone.length()<10||edit_phone.length()>10) {
+                        edit_phone.setError("Enter a right mobile number");
+                        return;
+                    }
+                    else {
                     }
 
-
-
-                    );
-
                 }
-
                 );
         // perform click event on button
        // submitButton.setOnClickListener(new View.OnClickListener() {
