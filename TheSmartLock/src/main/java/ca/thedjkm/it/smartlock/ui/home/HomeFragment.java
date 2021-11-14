@@ -153,7 +153,7 @@ public class HomeFragment extends Fragment {
 //            marquee.setTextColor(Color.parseColor("#ffffff"));
 //
 //        } else {
-//            m1.setBackgroundColor(Color.parseColor("#FFFFFF"));
+//            m1.setBackgroundColor(Color.parseColor("#ffffff"));
 //            marquee.setTextColor(Color.parseColor("#000000"));
 //        }
 

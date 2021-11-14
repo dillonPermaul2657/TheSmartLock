@@ -54,13 +54,16 @@
         android:src="@drawable/g" />
 
     <LinearLayout
-        android:layout_width="363dp"
-        android:layout_height="207dp"
-        android:layout_below="@+id/tvVar1"
+        android:layout_width="wrap_content"
+        android:layout_height="326dp"
+        android:layout_alignTop="@+id/imageview1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="169dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="35dp"
         android:orientation="horizontal"
         android:padding="10dp">
 
