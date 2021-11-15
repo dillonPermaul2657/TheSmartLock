@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="About Us"
-        android:textSize="30sp"
+        android:text="@string/about_us_title"
+        android:textSize="50sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,16 +22,15 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="276dp"
-        android:layout_height="298dp"
+        android:layout_width="335dp"
+        android:layout_height="357dp"
         android:text="@string/About_us_paragraph"
-        android:textSize="16dp"
+        android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.465" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

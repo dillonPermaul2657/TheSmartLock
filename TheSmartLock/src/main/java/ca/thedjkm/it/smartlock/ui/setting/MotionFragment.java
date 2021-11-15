@@ -11,15 +11,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import ca.thedjkm.it.smartlock.R;
 
 public class MotionFragment extends Fragment {
+
+    private TextView MsgTxt;
+    private final FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    private final DatabaseReference mRootReference = firebaseDatabase.getReference();
+    private final DatabaseReference mChildReference = mRootReference.child("message");
 
     @Nullable
     @Override
@@ -30,7 +42,7 @@ public class MotionFragment extends Fragment {
         Button btn=(Button) root.findViewById(R.id.ON);
         Button btn2=(Button) root.findViewById(R.id.OFF);
 
-
+        MsgTxt = (TextView)root.findViewById(R.id.msgTxt) ;
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +61,26 @@ public class MotionFragment extends Fragment {
         return root;
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        mChildReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                Integer message = snapshot.getValue(Integer.class);
+                MsgTxt.setText(message + "msg");
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+
+
+        });
+
+    }
 
 
 

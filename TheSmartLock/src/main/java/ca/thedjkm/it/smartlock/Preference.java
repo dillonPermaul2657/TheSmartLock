@@ -35,6 +35,7 @@ public class Preference extends PreferenceActivity {
             getListView().setBackgroundColor(Color.parseColor("#ffffff"));
         }
 
+// Night mode code
 
         CheckBoxPreference chk_night_instant = (CheckBoxPreference) findPreference("NIGHT");
         chk_night_instant.setOnPreferenceChangeListener(new android.preference.Preference.OnPreferenceChangeListener() {
@@ -52,6 +53,8 @@ public class Preference extends PreferenceActivity {
                 return true;
             }
         });
+
+        // Portrait/Landscape mode code
 
         ListPreference LP = (ListPreference) findPreference("ORIENTATION");
 
@@ -92,7 +95,6 @@ public class Preference extends PreferenceActivity {
                 return true;
             }
         });
-// 15:00 mins
 
 
     }
