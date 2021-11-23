@@ -37,4 +37,9 @@
         android:label="@string/title_review"
         tools:layout="@layout/fragment_review_screen" />
 
+    <fragment
+        android:id="@+id/navigation_Registration"
+        android:name="ca.thedjkm.it.smartlock.ui.registration.RegistrationScreen"
+        android:label="@string/string_registration"
+        tools:layout="@layout/fragment_registration" />
 </navigation>
