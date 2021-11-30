@@ -11,12 +11,14 @@ import android.view.LayoutInflater;
 import ca.thedjkm.it.smartlock.R;
 
 public class ProgressBarReview {
-   private Activity activity;
-   private AlertDialog dialog;
+    Activity activity;
+    AlertDialog dialog;
 
-    ProgressBarReview(Activity myActivity){
-        activity = myActivity;
+    ProgressBarReview(Activity myActivity){ activity = myActivity;
     }
+
+   // public ProgressBarReview(ReviewScreen reviewScreen) {
+   // }
 
 
     void loadingProgressBar(){
@@ -24,7 +26,7 @@ public class ProgressBarReview {
 
         LayoutInflater inflater = activity.getLayoutInflater();
         builder.setView(inflater.inflate(R.layout.progressbar_review, null));
-        builder.setCancelable(true);
+        builder.setCancelable(false);
 
         dialog = builder.create();
         dialog.show();

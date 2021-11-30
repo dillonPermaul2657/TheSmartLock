@@ -32,16 +32,18 @@ public class ReviewScreen extends Fragment {
         View view = inflater.inflate(R.layout.fragment_review_screen,container,false);
 
         // initiate rating bar and a button
-       // final RatingBar simpleRatingBar = (RatingBar) view.findViewById(R.id.RatingBar);
+        //final RatingBar simpleRatingBar = (RatingBar) view.findViewById(R.id.RatingBar);
         Button submitButton = (Button) view.findViewById(R.id.submitButton);
         final EditText edit_name = view.findViewById(R.id.editText1);
         final  EditText edit_email = view.findViewById(R.id.editText2);
         final  EditText edit_phone = view.findViewById(R.id.editText3);
         final  EditText edit_feedback = view.findViewById(R.id.editText2);
+        final ProgressBarReview progressBarReview = new ProgressBarReview(getActivity());
 
         DAOReview doa = new DAOReview();
         submitButton.setOnClickListener(v ->
                 {
+
                     ReviewData rev = new ReviewData(edit_name.getText().toString(),edit_email.getText().toString());
                     doa.add(rev).addOnSuccessListener(suc ->
                     {
@@ -74,6 +76,13 @@ public class ReviewScreen extends Fragment {
 
                 }
                 );
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressBarReview.loadingProgressBar();
+            }
+        });
         // perform click event on button
        // submitButton.setOnClickListener(new View.OnClickListener() {
          //   @Override
