@@ -27,17 +27,6 @@
 
     </PreferenceCategory>
 
-<!--    <PreferenceCategory-->
-<!--        android:key="expandable"-->
-<!--        android:title="Display"-->
-<!--        >-->
-
-<!--   <SeekBarPreference-->
-<!--       android:key="seekbar_preference"-->
-<!--       android:title="@string/Brightness_level"-->
-<!--       android:summary="@string/value_percentage"/>-->
-
-<!--    </PreferenceCategory>-->
 
     <PreferenceCategory
         android:key="expandable"

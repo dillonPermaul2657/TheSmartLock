@@ -58,7 +58,7 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        //code for animated text, does not work for some reason at the moment
+        //code for animated text
         textView = (TextView) view.findViewById(R.id.marquee);
         textView.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         textView.setSelected(true);
