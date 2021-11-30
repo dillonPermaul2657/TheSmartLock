@@ -33,7 +33,7 @@ public class ReviewScreen extends Fragment {
         View view = inflater.inflate(R.layout.fragment_review_screen,container,false);
 
         // initiate rating bar and a button
-        //final RatingBar simpleRatingBar = (RatingBar) view.findViewById(R.id.RatingBar);
+
         Button submitButton = (Button) view.findViewById(R.id.submitButton);
         final EditText edit_name = view.findViewById(R.id.editText1);
         final  EditText edit_email = view.findViewById(R.id.editText2);
@@ -57,11 +57,11 @@ public class ReviewScreen extends Fragment {
                     doa.add(rev).addOnSuccessListener(suc ->
                     {
 
-                        // get values and then displayed in a toast
-                           //String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
-                       // String rating = "Rating :: " + simpleRatingBar.getRating();
+                        // display snackbar when submitting review
+
+
                             Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
-                               /*totalStars*/  "Thank you for your feedback!"  /*rating*/, Snackbar.LENGTH_LONG);
+                                 "Thank you for your feedback!" , Snackbar.LENGTH_LONG);
                            snackBar.show();
                     }).addOnFailureListener(er ->
                     {
@@ -87,34 +87,7 @@ public class ReviewScreen extends Fragment {
                 }
                 );
 
-      /*  submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                progressBarReview.loadingProgressBar();
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        progressBarReview.dismissProgressBar();
 
-                    }
-                },5000);
-            }
-        });
-
-       */
-        // perform click event on button
-       // submitButton.setOnClickListener(new View.OnClickListener() {
-         //   @Override
-          //  public void onClick(View v) {
-                // get values and then displayed in a toast
-            //   String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
-               // String rating = "Rating :: " + simpleRatingBar.getRating();
-            //    Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
-                 //       totalStars + "\n" + rating, Snackbar.LENGTH_LONG);
-             //   snackBar.show();
-          //  }
-       // });
         return view;
     }
 }
