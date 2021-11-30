@@ -51,7 +51,7 @@ public class ReviewScreen extends Fragment {
                         public void run() {
                             progressBarReview.dismissProgressBar();
                         }
-                    },5000);
+                    },3000);
 
                     ReviewData rev = new ReviewData(edit_name.getText().toString(),edit_email.getText().toString());
                     doa.add(rev).addOnSuccessListener(suc ->
