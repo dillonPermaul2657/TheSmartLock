@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,10 +44,19 @@ public class ReviewScreen extends Fragment {
         DAOReview doa = new DAOReview();
         submitButton.setOnClickListener(v ->
                 {
+                    progressBarReview.loadingProgressBar();
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            progressBarReview.dismissProgressBar();
+                        }
+                    },5000);
 
                     ReviewData rev = new ReviewData(edit_name.getText().toString(),edit_email.getText().toString());
                     doa.add(rev).addOnSuccessListener(suc ->
                     {
+
                         // get values and then displayed in a toast
                            //String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
                        // String rating = "Rating :: " + simpleRatingBar.getRating();
@@ -77,12 +87,22 @@ public class ReviewScreen extends Fragment {
                 }
                 );
 
-        submitButton.setOnClickListener(new View.OnClickListener() {
+      /*  submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 progressBarReview.loadingProgressBar();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        progressBarReview.dismissProgressBar();
+
+                    }
+                },5000);
             }
         });
+
+       */
         // perform click event on button
        // submitButton.setOnClickListener(new View.OnClickListener() {
          //   @Override
