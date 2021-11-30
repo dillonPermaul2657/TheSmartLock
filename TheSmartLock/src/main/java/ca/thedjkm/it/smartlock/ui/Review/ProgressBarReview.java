@@ -17,10 +17,6 @@ public class ProgressBarReview {
     ProgressBarReview(Activity myActivity){ activity = myActivity;
     }
 
-   // public ProgressBarReview(ReviewScreen reviewScreen) {
-   // }
-
-
     void loadingProgressBar(){
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
 
