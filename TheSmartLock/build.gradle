@@ -51,7 +51,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-inappmessaging-display'
     implementation 'com.google.firebase:firebase-analytics'
-    compileOnly 'com.google.firebase:firebase-database'
+    compileOnly 'com.google.firebase:firebase-database:20.0.2'
 
 }
 apply plugin: 'com.google.gms.google-services'
