@@ -38,7 +38,7 @@ public class ReviewScreen extends Fragment {
         final EditText edit_name = view.findViewById(R.id.editText1);
         final  EditText edit_email = view.findViewById(R.id.editText2);
         final  EditText edit_phone = view.findViewById(R.id.editText3);
-        final  EditText edit_feedback = view.findViewById(R.id.editText2);
+        final  EditText edit_feedback = view.findViewById(R.id.editText4);
         final ProgressBarReview progressBarReview = new ProgressBarReview(getActivity());
 
         DAOReview doa = new DAOReview();

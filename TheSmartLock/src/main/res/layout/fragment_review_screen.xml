@@ -68,7 +68,7 @@
         android:layout_marginStart="61dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="337dp"
-        android:text="Feedback"
+        android:text="@string/feedback"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#0099FF"
         android:textSize="20sp" />
