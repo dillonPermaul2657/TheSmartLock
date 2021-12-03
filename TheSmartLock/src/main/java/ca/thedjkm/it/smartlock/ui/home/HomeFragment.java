@@ -10,6 +10,7 @@ package ca.thedjkm.it.smartlock.ui.home;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
@@ -45,6 +46,8 @@ import java.util.Calendar;
 
 import ca.thedjkm.it.smartlock.MainActivity;
 import ca.thedjkm.it.smartlock.R;
+import ca.thedjkm.it.smartlock.ui.Review.ReviewScreen;
+import ca.thedjkm.it.smartlock.ui.registration.RegistrationScreen;
 
 public class HomeFragment extends Fragment {
 
@@ -81,12 +84,12 @@ public class HomeFragment extends Fragment {
         textViewDate.setText(dateTime);
 
         buttonRequest = view.findViewById(R.id.button);
-
+// Code for floating action button that redirects to register screen.
         FloatingActionButton fab = view.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Register here", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
