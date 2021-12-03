@@ -39,6 +39,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
+        android:inputType="textPersonName"
         android:textColor="@color/black"
         android:layout_marginTop="202dp"
         android:ems="10" />
@@ -61,6 +62,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
         android:textColor="@color/black"
+        android:inputType="textEmailAddress"
         android:layout_marginBottom="358dp"
         android:ems="10" />
 
@@ -87,7 +89,7 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnrgstr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
