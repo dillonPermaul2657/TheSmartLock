@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartLock">
         <activity
+            android:name=".Registration"
+            android:exported="true" />
+        <activity
             android:name=".About"
             android:exported="true" />
         <activity
@@ -25,9 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".Preference" />
-
     </application>
 
 </manifest>
