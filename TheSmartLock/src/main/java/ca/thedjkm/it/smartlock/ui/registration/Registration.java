@@ -3,6 +3,7 @@ package ca.thedjkm.it.smartlock.ui.registration;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +13,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import ca.thedjkm.it.smartlock.R;
 import ca.thedjkm.it.smartlock.ui.Review.DAOReview;
+import ca.thedjkm.it.smartlock.ui.Review.ProgressBarReview;
 import ca.thedjkm.it.smartlock.ui.Review.ReviewData;
 
 
@@ -34,12 +36,23 @@ public class Registration extends AppCompatActivity {
         email = findViewById(R.id.txtEmail);
         pass = findViewById(R.id.txtPwd);
         register = findViewById(R.id.btnrgstr);
+        final ProgressBarReview progressBarReview = new ProgressBarReview(Registration.this);
 
         DAORegister doa = new DAORegister();
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                progressBarReview.loadingProgressBar();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        progressBarReview.dismissProgressBar();
+                    }
+                },2000);
+
 
                 RegisterData reg = new RegisterData(name.getText().toString(),email.getText().toString(),
                         pass.getText().toString());

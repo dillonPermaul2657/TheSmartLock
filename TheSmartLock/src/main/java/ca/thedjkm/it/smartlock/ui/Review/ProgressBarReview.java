@@ -14,10 +14,10 @@ public class ProgressBarReview {
     Activity activity;
     AlertDialog dialog;
 
-    ProgressBarReview(Activity myActivity){ activity = myActivity;
+    public ProgressBarReview(Activity myActivity){ activity = myActivity;
     }
 
-    void loadingProgressBar(){
+    public void loadingProgressBar(){
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
 
         LayoutInflater inflater = activity.getLayoutInflater();
@@ -28,7 +28,7 @@ public class ProgressBarReview {
         dialog.show();
     }
 
-    void dismissProgressBar(){
+    public void dismissProgressBar(){
         dialog.dismiss();
     }
 }
