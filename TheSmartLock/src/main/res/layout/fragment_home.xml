@@ -83,6 +83,7 @@
         android:layout_marginEnd="44dp"
         android:layout_marginBottom="96dp"
         android:contentDescription="Register"
+        android:src="@drawable/ic_baseline_app_registration_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
