@@ -94,8 +94,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
-
         //This is the runtime permission fully functioning by Kamaljit Mahal (Nov 13,2021)
         //This was completed in deliverable 2, this is just an update
         buttonRequest.setOnClickListener(new View.OnClickListener() {
