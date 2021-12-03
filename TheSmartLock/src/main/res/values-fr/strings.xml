@@ -33,4 +33,15 @@ Meet Gajjar N01391319 Section B
     <string name="Notification_messge">Activer la notification</string>
     <string name="Motion_Reading"> Nombre de mouvements : </string>
 
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="title_review">Revoir</string>
+    <string name="Review">Cinquième Écran</string>
+    <string name="fifth_screen">Revoir</string>
+    <string name="submit_btn_txt">Soumettre</string>
+    <string name="name_string">Enter Your Name</string>
+    <string name="email_string">Enter your email</string>
+    <string name="String_phone_number">Phone Number</string>
+    <string name="About_us_paragraph">This is a home security smart lock that can be unlocked and locked using a mobile device and a RFID Card. This can be used in people’s everyday lives as many people tend to lose their keys or the combinations to locks. This smart lock is very convenient and user friendly as all you need to unlock the lock is either your mobile device or an RFID Card.
+</string>
+
 </resources>
