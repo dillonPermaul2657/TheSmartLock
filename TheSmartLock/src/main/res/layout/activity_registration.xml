@@ -16,6 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginStart="130dp"
         android:layout_marginTop="80dp"
+        android:textColor="@color/black"
         android:text="Registration"
         android:textSize="25dp"
         android:textStyle="bold" />
@@ -26,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:textColor="@color/black"
         android:layout_marginStart="99dp"
         android:layout_marginTop="164dp"
         android:text="Full Name" />
@@ -37,6 +39,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
         android:layout_marginTop="202dp"
         android:ems="10" />
 
@@ -47,6 +50,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="287dp"
+        android:textColor="@color/black"
         android:text="Email" />
 
     <EditText
@@ -56,6 +60,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
         android:layout_marginBottom="358dp"
         android:ems="10" />
 
@@ -65,6 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
         android:layout_marginBottom="309dp"
         android:text="Password" />
 
@@ -74,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_marginLeft="100dp"
         android:layout_marginBottom="241dp"
         android:ems="10"
