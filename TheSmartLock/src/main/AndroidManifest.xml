@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartLock">
         <activity
-            android:name=".Registration"
+            android:name=".ui.registration.Registration"
             android:exported="true" />
         <activity
             android:name=".About"

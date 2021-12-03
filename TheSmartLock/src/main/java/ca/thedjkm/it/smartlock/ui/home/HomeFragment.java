@@ -14,10 +14,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.text.Layout;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,22 +30,15 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-import org.w3c.dom.Text;
-
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import ca.thedjkm.it.smartlock.MainActivity;
 import ca.thedjkm.it.smartlock.R;
-import ca.thedjkm.it.smartlock.Registration;
-import ca.thedjkm.it.smartlock.ui.Review.ReviewScreen;
+import ca.thedjkm.it.smartlock.ui.registration.Registration;
 
 public class HomeFragment extends Fragment {
 
