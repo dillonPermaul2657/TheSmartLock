@@ -89,7 +89,7 @@ public class HomeFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Register here", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Register here", Snackbar.LENGTH_SHORT)
                         .setAction("Action", null).show();
                 Intent intent = new Intent(getContext().getApplicationContext(),Registration.class);
                 startActivity(intent);
