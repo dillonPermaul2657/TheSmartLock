@@ -48,7 +48,6 @@ import ca.thedjkm.it.smartlock.MainActivity;
 import ca.thedjkm.it.smartlock.R;
 import ca.thedjkm.it.smartlock.Registration;
 import ca.thedjkm.it.smartlock.ui.Review.ReviewScreen;
-import ca.thedjkm.it.smartlock.ui.registration.RegistrationScreen;
 
 public class HomeFragment extends Fragment {
 
