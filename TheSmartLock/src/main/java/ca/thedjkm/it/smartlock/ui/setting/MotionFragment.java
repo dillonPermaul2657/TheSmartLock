@@ -6,6 +6,9 @@ package ca.thedjkm.it.smartlock.ui.setting;
 
 import static android.widget.Toast.*;
 
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
+import android.hardware.TriggerEventListener;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +35,11 @@ public class MotionFragment extends Fragment {
     private final FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private final DatabaseReference mRootReference = firebaseDatabase.getReference();
     private final DatabaseReference mChildReference = mRootReference.child("message");
+
+    private SensorManager sensorManager;
+    private Sensor sensor;
+    private TriggerEventListener triggerEventListener;
+
 
     @Nullable
     @Override
@@ -60,6 +68,10 @@ public class MotionFragment extends Fragment {
 
         return root;
     }
+
+
+
+
 
     @Override
     public void onStart() {

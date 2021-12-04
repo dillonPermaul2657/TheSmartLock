@@ -168,6 +168,7 @@ public class HomeFragment extends Fragment {
         if ("1".equals(orien)) {
             getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
 
+
         } else if ("2".equals(orien)) {
             getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
