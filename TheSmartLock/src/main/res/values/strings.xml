@@ -56,5 +56,12 @@ Meet Gajjar N01391319 Section B
     <string name="help">Help</string>
     <string name="notif">Notification</string>
     <string name="NotiMessage">This is a SmartLock notification</string>
+    <string name="name_error">Please enter your name</string>
+    <string name="phone_error">Please enter a phone number</string>
+    <string name="email_error">Please enter a email address</string>
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a password with at least 4 characters, at least 1 digit, at least 1 lower case letter, at least 1 upper case letter, at least 1 special character, no spaces</string>
+
 
 </resources>
