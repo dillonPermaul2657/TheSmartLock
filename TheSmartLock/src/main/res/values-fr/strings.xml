@@ -60,12 +60,12 @@ Meet Gajjar N01391319 Section B
     <string name="click_me">Cliquez sur moi !</string>
     <string name="notif">Notification</string>
     <string name="NotiMessage">Ceci est une notification SmartLock</string>
-    <string name="name_error">S\'il vous plaît entrez votre nom</string>
+    <string name="name_error">S\il vous plaît entrez votre nom</string>
     <string name="phone_error">Veuillez entrer un numéro de téléphone</string>
     <string name="email_error">Veuillez saisir une adresse e-mail</string>
-    <string name="error_invalid_email">L\'email n\'est pas valide</string>
+    <string name="error_invalid_email">Lemail nest pas valide</string>
     <string name="password_error">Veuillez entrer un mot de passe</string>
-    <string name="error_invalid_password">Veuillez saisir un mot de passe d\'au moins 4 caractères, au moins 1 chiffre,
-        au moins 1 lettre minuscule, au moins 1 lettre majuscule, au moins 1 caractère spécial, pas d'espace</string>
+    <string name="error_invalid_password">Veuillez saisir un mot de passe dau moins 4 caractères, au moins 1 chiffre,
+        au moins 1 lettre minuscule, au moins 1 lettre majuscule, au moins 1 caractère spécial, pas despace</string>
 
 </resources>
