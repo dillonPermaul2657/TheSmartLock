@@ -44,4 +44,21 @@ Meet Gajjar N01391319 Section B
     <string name="About_us_paragraph">Il s\'agit d\'une serrure intelligente de sécurité domestique qui peut être déverrouillée et verrouillée à l\'aide d\'un appareil mobile et d\'une carte RFID. Cela peut être utilisé dans la vie quotidienne des gens, car de nombreuses personnes ont tendance à perdre leurs clés ou les combinaisons de serrures. Cette serrure intelligente est très pratique et conviviale car tout ce dont vous avez besoin pour déverrouiller la serrure est votre appareil mobile ou une carte RFID.
     </string>
 
+    <string name="on_button_1">Allumer</string>
+    <string name="off_button2">Éteindre</string>
+    <string name="help_page"> Si vous rencontrez des problèmes avec l\'application SmartLock, vous pouvez nous contacter en envoyant un e-mail ou en appelant notre équipe d'assistance technique.</string>
+    <string name="Email_helppage"> SmartLockSupportTeam@gmail.com</string>
+    <string name="help_title">Aider</string>
+    <string name="email_tag">Email:</string>
+    <string name="num_tag">+1(647)482-9871</string>
+    <string name="about_us_title">À propos de nous</string>
+    <string name="string_registration">Inscription</string>
+    <string name="submitting_review">Soumission. . .</string>
+    <string name="feedback">Retour d\'information</string>
+    <string name="about">À propos de</string>
+    <string name="help">Aider</string>
+    <string name="click_me">Cliquez sur moi !</string>
+    <string name="notif">Notification</string>
+    <string name="NotiMessage">Ceci est une notification SmartLock</string>
+
 </resources>
