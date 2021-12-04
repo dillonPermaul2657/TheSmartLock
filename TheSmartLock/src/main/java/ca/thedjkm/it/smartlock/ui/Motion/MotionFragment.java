@@ -2,7 +2,7 @@
 // Dillon Permaul N01372657 Section B
 // Janpreet Singh N01361405 Section B
 // Meet Gajjar N01391319 Section B
-package ca.thedjkm.it.smartlock.ui.setting;
+package ca.thedjkm.it.smartlock.ui.Motion;
 
 import static android.widget.Toast.*;
 
@@ -26,6 +26,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import ca.thedjkm.it.smartlock.R;
 
@@ -48,23 +49,18 @@ public class MotionFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_motion,container,false);
         Button btn=(Button) root.findViewById(R.id.ON);
-        //Button btn2=(Button) root.findViewById(R.id.OFF);
+       // Button btn2=(Button) root.findViewById(R.id.OFF);
 
         MsgTxt = (TextView)root.findViewById(R.id.msgTxt) ;
        MsgTxt.setText("1");
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Motion Sensor is on", LENGTH_SHORT).show();
+                StyleableToast.makeText(getActivity(), "Motion Sensor is on !!!", R.style.onbtn).show();
             }
         });
 
-//        btn2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(getActivity(), "Motion sensor is OFF", LENGTH_SHORT).show();
-//            }
-//        });
+
 
         return root;
     }

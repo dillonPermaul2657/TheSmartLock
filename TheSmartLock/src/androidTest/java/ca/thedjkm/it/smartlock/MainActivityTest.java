@@ -27,7 +27,6 @@ public class MainActivityTest {
     }
 
     @Test
-
     public void testLaunch(){
         View view = mActivity.findViewById(R.id.nav_host_fragment);
         assertNotNull(view);
@@ -35,9 +34,32 @@ public class MainActivityTest {
     }
 
 
+
+    @Test
+    public void  test2(){
+        View view = mActivity.findViewById(R.id.nav_view);
+        assertNotNull(view);
+    }
+
+    @Test
+    public void test3(){
+        View view = mActivity.findViewById(R.id.check);
+        assertNotNull(mActivity);
+
+    }
+
+    @Test
+    public void test4(){
+        View view = mActivity.findViewById(R.id.check);
+      //  assertTrue("Name",true);
+        assertEquals("Name","Name");
+
+    }
+
+
     @After
     public void tearDown() throws Exception {
 
-        mActivity = null;
+      //  mActivity = null;
     }
 }

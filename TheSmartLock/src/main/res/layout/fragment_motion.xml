@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.557" />
 
     <Button
-        android:id="@+id/ON2"
+        android:id="@+id/OFF"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:background="@drawable/onbtn"
