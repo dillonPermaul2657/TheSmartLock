@@ -51,7 +51,7 @@ public class ReviewScreen extends Fragment {
                         public void run() {
                             progressBarReview.dismissProgressBar();
                         }
-                    },3000);
+                    },2000);
 
                     ReviewData rev = new ReviewData(edit_name.getText().toString(),edit_email.getText().toString(),
                             edit_phone.getText().toString(),edit_feedback.getText().toString());
