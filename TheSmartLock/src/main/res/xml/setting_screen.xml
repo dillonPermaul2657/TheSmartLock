@@ -6,6 +6,7 @@
         android:title="Enable Night Mode">
 
         <CheckBoxPreference
+            android:id="@+id/check"
             android:defaultValue="false"
             android:key="NIGHT"
             android:summaryOff="Night mode is activated"

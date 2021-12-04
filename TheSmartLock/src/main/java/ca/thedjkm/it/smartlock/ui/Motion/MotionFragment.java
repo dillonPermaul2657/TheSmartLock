@@ -2,7 +2,7 @@
 // Dillon Permaul N01372657 Section B
 // Janpreet Singh N01361405 Section B
 // Meet Gajjar N01391319 Section B
-package ca.thedjkm.it.smartlock.ui.setting;
+package ca.thedjkm.it.smartlock.ui.Motion;
 
 import static android.widget.Toast.*;
 
