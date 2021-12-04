@@ -65,6 +65,7 @@ Meet Gajjar N01391319 Section B
     <string name="email_error">Please enter a email address</string>
     <string name="error_invalid_email">Email is not valid</string>
     <string name="password_error">Please enter a password</string>
-    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="error_invalid_password">Please enter a password with at least 4 characters, at least 1 digit,
+        at least 1 lower case letter, at least 1 upper case letter, at least 1 special character, no spaces</string>
 
 </resources>

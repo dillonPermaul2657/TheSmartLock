@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.regex.Pattern;
+
 import ca.thedjkm.it.smartlock.R;
 import ca.thedjkm.it.smartlock.ui.Review.DAOReview;
 import ca.thedjkm.it.smartlock.ui.Review.ProgressBarReview;
@@ -29,6 +31,17 @@ public class Registration extends AppCompatActivity {
     EditText pass;
     Button register;
     boolean isNameValid, isEmailValid, isPasswordValid;
+    private static final Pattern PASSWORD_PATTERN =
+            Pattern.compile("^" +
+                    //"(?=.*[0-9])" +         //at least 1 digit
+                    //"(?=.*[a-z])" +         //at least 1 lower case letter
+                    //"(?=.*[A-Z])" +         //at least 1 upper case letter
+                    "(?=.*[a-zA-Z])" +      //any letter
+                    "(?=.*[@#$%^&+=])" +    //at least 1 special character
+                    "(?=\\S+$)" +           //no white spaces
+                    ".{4,}" +               //at least 4 characters
+                    "$");
+
 
 
     @Override
@@ -108,7 +121,7 @@ public class Registration extends AppCompatActivity {
         if (pass.getText().toString().isEmpty()) {
             pass.setError(getResources().getString(R.string.password_error));
             isPasswordValid = false;
-        } else if (pass.getText().length() < 6) {
+        } else if (!PASSWORD_PATTERN.matcher(pass.getText().toString()).matches()) {
             pass.setError(getResources().getString(R.string.error_invalid_password));
             isPasswordValid = false;
         } else {
@@ -118,5 +131,6 @@ public class Registration extends AppCompatActivity {
         if (isNameValid && isEmailValid && isPasswordValid) {
             Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_SHORT).show();
         }
+
     }
 };
