@@ -139,6 +139,16 @@ public class MotionFragment extends Fragment {
     // code for shared preference for the landscape mode
     private void Load_setting() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
+//        boolean chk_night = sp.getBoolean("NIGHT", false);
+//        if (chk_night) {
+//         m1.setBackgroundColor(Color.parseColor("#222222"));
+//            marquee.setTextColor(Color.parseColor("#ffffff"));
+//            changeToBlue(m1);
+//
+//        } else {
+//            m1.setBackgroundColor(Color.parseColor("#ffffff"));
+//            marquee.setTextColor(Color.parseColor("#000000"));
+//        }
 
         String orien = sp.getString("ORIENTATION", "false");
         if ("1".equals(orien)) {

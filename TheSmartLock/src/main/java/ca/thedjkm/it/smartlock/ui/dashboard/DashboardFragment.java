@@ -10,7 +10,10 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +51,7 @@ public class DashboardFragment extends Fragment {
         lockButton1 = (ImageButton) view.findViewById(R.id.imageButton1);
         unlockButton2 = (ImageButton) view.findViewById(R.id.imageButton2);
         relativeLayout = (RelativeLayout) view.findViewById(R.id.rlVar1);
+        Load_setting();
 
         lockButton1.setOnClickListener(new View.OnClickListener() {
 
@@ -73,6 +77,31 @@ public class DashboardFragment extends Fragment {
         return view;
 
     }
+    // code for shared preference for the landscape mode
+    private void Load_setting() {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
 
+        String orien = sp.getString("ORIENTATION", "false");
+        if ("1".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
+
+
+        } else if ("2".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        } else if ("3".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        }
+
+
+
+    }
+
+    @Override
+    public void onResume() {
+        Load_setting();
+        super.onResume();
+    }
 
 }

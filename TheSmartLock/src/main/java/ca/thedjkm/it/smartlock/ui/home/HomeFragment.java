@@ -14,6 +14,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
@@ -143,9 +144,6 @@ public class HomeFragment extends Fragment {
 
 
 
-
-
-
         });
         return view;
     }
@@ -154,18 +152,14 @@ public class HomeFragment extends Fragment {
     // code for converting to landscape mode
     // Meet Gajjar
 
+    public void changeToBlue(ConstraintLayout background) {
+        background.setBackgroundColor(Color.BLACK);
+        background.invalidate();
+
+    }
+
     private void Load_setting() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
-
-//        boolean chk_night = sp.getBoolean("NIGHT", false);
-//        if (chk_night) {
-//            m1.setBackgroundColor(Color.parseColor("#222222"));
-//         //   marquee.setTextColor(Color.parseColor("#ffffff"));
-//
-//        } else {
-//            m1.setBackgroundColor(Color.parseColor("#ffffff"));
-//          //  marquee.setTextColor(Color.parseColor("#000000"));
-//        }
 
 
         String orien = sp.getString("ORIENTATION", "false");
@@ -182,9 +176,6 @@ public class HomeFragment extends Fragment {
         }
 
 
-
-
-
     }
 
     @Override
@@ -192,6 +183,8 @@ public class HomeFragment extends Fragment {
         Load_setting();
         super.onResume();
     }
+
+
 }
 
 
