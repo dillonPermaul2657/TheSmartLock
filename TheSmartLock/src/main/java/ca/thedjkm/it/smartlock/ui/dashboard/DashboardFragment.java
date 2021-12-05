@@ -66,7 +66,7 @@ public class DashboardFragment extends Fragment {
             public void onClick(View v) {
                 relativeLayout.setBackgroundResource(R.color.green);
 //                Toast.makeText(getActivity(),"The Door is Unlocked!",Toast.LENGTH_SHORT).show();
-//                StyleableToast.makeText(getActivity(), "The Door is Unlocked!",Toast.LENGTH_SHORT ,R.style.door_unlock).show();
+                StyleableToast.makeText(getActivity(), "The Door is Unlocked!",Toast.LENGTH_SHORT ,R.style.door_unlock).show();
 
             }
         });
