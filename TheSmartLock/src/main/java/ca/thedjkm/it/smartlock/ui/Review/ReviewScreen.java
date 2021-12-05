@@ -1,5 +1,7 @@
 package ca.thedjkm.it.smartlock.ui.Review;
 
+import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,6 +10,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +43,7 @@ public class ReviewScreen extends Fragment {
         final  EditText edit_phone = view.findViewById(R.id.editText3);
         final  EditText edit_feedback = view.findViewById(R.id.editText4);
         final ProgressBarReview progressBarReview = new ProgressBarReview(getActivity());
-
+        Load_setting();
         DAOReview doa = new DAOReview();
         submitButton.setOnClickListener(v ->
                 {
@@ -91,4 +94,40 @@ public class ReviewScreen extends Fragment {
 
         return view;
     }
+
+
+
+
+
+
+    // code for shared preference for the landscape mode
+    private void Load_setting() {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
+        String orien = sp.getString("ORIENTATION", "false");
+        if ("1".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
+
+
+        } else if ("2".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        } else if ("3".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        }
+
+
+
+    }
+
+    @Override
+    public void onResume() {
+        Load_setting();
+        super.onResume();
+    }
+
+
+
+
 }

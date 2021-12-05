@@ -8,11 +8,14 @@ import static android.widget.Toast.*;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.hardware.TriggerEventListener;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -62,7 +65,7 @@ public class MotionFragment extends Fragment {
 
         MsgTxt = (TextView)root.findViewById(R.id.msgTxt) ;
        MsgTxt.setText("1");
-
+        Load_setting();
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID,CHANNEL_NAME,NotificationManager.IMPORTANCE_DEFAULT);
             channel.setDescription(CHANNEL_DESC);
@@ -84,10 +87,9 @@ public class MotionFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 StyleableToast.makeText(getActivity(), "Motion Sensor is OFF !!!", R.style.offbtn).show();
-                displayNotification();
+
             }
         });
-
 
 
 
@@ -130,6 +132,35 @@ public class MotionFragment extends Fragment {
 
         });
 
+    }
+
+
+
+    // code for shared preference for the landscape mode
+    private void Load_setting() {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
+        String orien = sp.getString("ORIENTATION", "false");
+        if ("1".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
+
+
+        } else if ("2".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        } else if ("3".equals(orien)) {
+            getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        }
+
+
+
+    }
+
+    @Override
+    public void onResume() {
+        Load_setting();
+        super.onResume();
     }
 
 

@@ -150,6 +150,10 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+
+    // code for converting to landscape mode
+    // Meet Gajjar
+
     private void Load_setting() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
 
