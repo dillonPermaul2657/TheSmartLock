@@ -26,6 +26,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
+
 import ca.thedjkm.it.smartlock.R;
 
 public class DashboardFragment extends Fragment {
@@ -53,7 +55,8 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 relativeLayout.setBackgroundResource(R.color.red);
-                Toast.makeText(getActivity(),"The Door is Locked!",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(),"The Door is Locked!",Toast.LENGTH_SHORT).show();
+                StyleableToast.makeText(getActivity(), "The Door is Locked!",Toast.LENGTH_SHORT ,R.style.door_lock).show();
             }
 
         });
@@ -62,7 +65,8 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 relativeLayout.setBackgroundResource(R.color.green);
-                Toast.makeText(getActivity(),"The Door is Unlocked!",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(),"The Door is Unlocked!",Toast.LENGTH_SHORT).show();
+//                StyleableToast.makeText(getActivity(), "The Door is Unlocked!",Toast.LENGTH_SHORT ,R.style.door_unlock).show();
 
             }
         });
