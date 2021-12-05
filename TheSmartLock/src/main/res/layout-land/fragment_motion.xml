@@ -19,22 +19,6 @@
         app:srcCompat="@drawable/sensor" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="336dp"
-        android:layout_height="72dp"
-        android:text="@string/motion_capture"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:typeface="serif"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="197dp"
         android:layout_height="36dp"
@@ -66,7 +50,7 @@
         app:layout_constraintVertical_bias="0.284" />
 
     <Button
-        android:id="@+id/ON2"
+        android:id="@+id/OFF"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:background="@drawable/onbtn"
