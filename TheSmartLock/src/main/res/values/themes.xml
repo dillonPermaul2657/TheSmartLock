@@ -22,7 +22,7 @@
         <!-- Customize your theme here. -->
 
     <style name="onbtn">
-        <item name="colorBackground"> #94ffab </item>
+        <item name="colorBackground"> #FF6666 </item>
         <item name="textColor"> #000000 </item>
         <item name="strokeColor"> #000000 </item>
         <item name="strokeWidth"> 3dp </item>
