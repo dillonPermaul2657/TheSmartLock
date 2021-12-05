@@ -28,6 +28,13 @@
         <item name="strokeWidth"> 3dp </item>
     </style>
 
+    <style name="offbtn">
+        <item name="colorBackground"> #5D9CC6 </item>
+        <item name="textColor"> #000000 </item>
+        <item name="strokeColor"> #000000 </item>
+        <item name="strokeWidth"> 3dp </item>
+    </style>
+
   <style name="door_lock">
         <item name="colorBackground"> #FFA229 </item>
         <item name="textColor"> #000000 </item>
@@ -35,13 +42,15 @@
       <item name="strokeWidth"> 4dp </item>
   </style>
 
-
-    <style name="offbtn">
-        <item name="colorBackground"> #5D9CC6 </item>
+    <style name="door_unlock">
+        <item name="colorBackground"> #F0F8FF </item>
         <item name="textColor"> #000000 </item>
         <item name="strokeColor"> #000000 </item>
-        <item name="strokeWidth"> 3dp </item>
+        <item name="strokeWidth"> 4dp </item>
     </style>
+
+
+
 
 </resources>
 
