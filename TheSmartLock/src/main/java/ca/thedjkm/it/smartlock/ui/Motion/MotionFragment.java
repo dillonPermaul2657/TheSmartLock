@@ -6,9 +6,12 @@ package ca.thedjkm.it.smartlock.ui.Motion;
 
 import static android.widget.Toast.*;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.hardware.TriggerEventListener;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +22,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.firebase.database.DataSnapshot;
@@ -40,6 +45,11 @@ public class MotionFragment extends Fragment {
     private SensorManager sensorManager;
     private Sensor sensor;
     private TriggerEventListener triggerEventListener;
+    //Button ON;
+
+    private static final String CHANNEL_ID = "SIMPLFIED_CODING";
+    private static final String CHANNEL_NAME = "SIMPLFIED CODING";
+    private static final String CHANNEL_DESC = "SIMPLFIED_CODING NOTIFICATION";
 
 
     @Nullable
@@ -53,17 +63,30 @@ public class MotionFragment extends Fragment {
 
         MsgTxt = (TextView)root.findViewById(R.id.msgTxt) ;
        MsgTxt.setText("1");
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID,CHANNEL_NAME,NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setDescription(CHANNEL_DESC);
+            NotificationManager manager = getActivity().getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 StyleableToast.makeText(getActivity(), "Motion Sensor is on !!!", R.style.onbtn).show();
+                displayNotification();
+
             }
         });
+
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                StyleableToast.makeText(getActivity(), "Motion Sensor is OFF !!!", R.style.offbtn).show();
+                StyleableToast.makeText(getContext(), "Motion Sensor is OFF !!!", R.style.offbtn).show();
             }
         });
 
@@ -72,7 +95,19 @@ public class MotionFragment extends Fragment {
 
 
 
+    private void displayNotification(){
 
+        NotificationCompat.Builder nBuilder =
+                new NotificationCompat.Builder(getContext(),CHANNEL_ID)
+                    .setSmallIcon(R.drawable.motion_icon)
+                    .setContentTitle("Motion")
+                    .setContentText("Motion sensor is on")
+                    .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+        NotificationManagerCompat mnotificationManager = NotificationManagerCompat.from(getContext());
+        mnotificationManager.notify(1,nBuilder.build());
+
+          }
 
     @Override
     public void onStart() {
