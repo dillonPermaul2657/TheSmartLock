@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="252dp"
-        android:text="Temperature: 3*C, Humidity: 50.6%"
+        android:text="@string/t_h"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="628dp"
         android:layout_marginBottom="76dp"
-        android:contentDescription="Register"
+        android:contentDescription="@string/rg"
         android:src="@drawable/ic_baseline_add_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="560dp"
         android:layout_marginEnd="120dp"
-        android:text="Click on fab button to register"
+        android:text="@string/fab_st"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textColor="@color/black"

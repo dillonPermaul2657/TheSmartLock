@@ -17,7 +17,7 @@
         android:layout_marginStart="130dp"
         android:layout_marginTop="80dp"
         android:textColor="@color/black"
-        android:text="Registration"
+        android:text="@string/registration"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -30,7 +30,7 @@
         android:textColor="@color/black"
         android:layout_marginStart="99dp"
         android:layout_marginTop="164dp"
-        android:text="Full Name" />
+        android:text="@string/fn" />
 
     <EditText
         android:id="@+id/txtName"
@@ -53,7 +53,7 @@
         android:layout_marginStart="102dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="246dp"
-        android:text="Email"
+        android:text="@string/em"
         android:textColor="@color/black" />
 
     <EditText
@@ -75,7 +75,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="100dp"
         android:layout_marginBottom="290dp"
-        android:text="Password"
+        android:text="@string/psw"
         android:textColor="@color/black" />
 
     <EditText
@@ -98,6 +98,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
         android:layout_marginBottom="163dp"
-        android:text="Register" />
+        android:text="@string/rg" />
 
 </RelativeLayout>
