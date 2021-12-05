@@ -35,7 +35,7 @@ public class MotionFragment extends Fragment {
     private TextView MsgTxt;
     private final FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     private final DatabaseReference mRootReference = firebaseDatabase.getReference();
-    private final DatabaseReference mChildReference = mRootReference.child("message");
+    private final DatabaseReference mChildReference = mRootReference.child(getString(R.string.msg));
 
     private SensorManager sensorManager;
     private Sensor sensor;
@@ -56,14 +56,14 @@ public class MotionFragment extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                StyleableToast.makeText(getActivity(), "Motion Sensor is on !!!", R.style.onbtn).show();
+                StyleableToast.makeText(getActivity(), getString(R.string.ms_on), R.style.onbtn).show();
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                StyleableToast.makeText(getActivity(), "Motion Sensor is OFF !!!", R.style.offbtn).show();
+                StyleableToast.makeText(getActivity(), getString(R.string.ms_off), R.style.offbtn).show();
             }
         });
 

@@ -62,7 +62,7 @@ public class ReviewScreen extends Fragment {
 
 
                             Snackbar snackBar = Snackbar.make(getActivity().findViewById(android.R.id.content),
-                                 "Thank you for your feedback!" , Snackbar.LENGTH_LONG);
+                                 R.string.ty_fb , Snackbar.LENGTH_LONG);
                            snackBar.show();
                     }).addOnFailureListener(er ->
                     {
@@ -72,14 +72,14 @@ public class ReviewScreen extends Fragment {
                     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
                     String pattern = "^\\s*(?:\\+?(\\d{1,3}))?[-. (]*(\\d{3})[-. )]*(\\d{3})[-. ]*(\\d{4})(?: *x(\\d+))?\\s*$";
                     if(edit_name.equals("") || edit_name.equals(null)) {
-                        edit_name.setError("Username can't be empty");
+                        edit_name.setError(getString(R.string.error1));
                         return;
                     } else if (edit_email.equals("") || edit_email.equals(null)) {
-                        edit_email.setError("Please enter right email Address");
+                        edit_email.setError(getString(R.string.error2));
                         return;
                     }
                     else if (edit_phone.equals("") ||edit_phone.equals(null)||edit_phone.length()<10||edit_phone.length()>10) {
-                        edit_phone.setError("Enter a right mobile number");
+                        edit_phone.setError(getString(R.string.error3));
                         return;
                     }
                     else {

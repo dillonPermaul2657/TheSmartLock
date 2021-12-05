@@ -63,7 +63,7 @@ public class Registration extends AppCompatActivity {
             public void onClick(View v) {
                 SetValidation();
                 if (isNameValid && isEmailValid && isPasswordValid) {
-                    Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.sucessrgs, Toast.LENGTH_SHORT).show();
 
                     progressBarReview.loadingProgressBar();
                     Handler handler = new Handler();
@@ -79,12 +79,12 @@ public class Registration extends AppCompatActivity {
                             pass.getText().toString());
                     doa.add(reg).addOnSuccessListener(suc ->
                     {
-                        Toast toast = Toast.makeText(getApplicationContext(), "You have been registered", Toast.LENGTH_LONG);
+                        Toast toast = Toast.makeText(getApplicationContext(), R.string.sucess_rg, Toast.LENGTH_LONG);
                         toast.show();
 
                     }).addOnFailureListener(er ->
                             {
-                                Toast toast = Toast.makeText(getApplicationContext(), "Please try again", Toast.LENGTH_LONG);
+                                Toast toast = Toast.makeText(getApplicationContext(), R.string.tryag, Toast.LENGTH_LONG);
                                 toast.show();
                                 // Toast.makeText(getActivity(),""+er.getMessage(),Toast.LENGTH_SHORT).show();
                             }
@@ -129,7 +129,7 @@ public class Registration extends AppCompatActivity {
         }
 
         if (isNameValid && isEmailValid && isPasswordValid) {
-            Toast.makeText(getApplicationContext(), "Successfully Registered", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.s_rg, Toast.LENGTH_SHORT).show();
         }
 
     }

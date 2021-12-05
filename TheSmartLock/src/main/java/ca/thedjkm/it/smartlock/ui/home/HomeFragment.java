@@ -94,7 +94,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 if (ContextCompat.checkSelfPermission(getActivity(),
                         Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(getActivity(), "You have already granted this permission!",
+                    Toast.makeText(getActivity(), R.string.perm1,
                             Toast.LENGTH_SHORT).show();
                 } else {
                     requestStoragePermission();
@@ -105,16 +105,16 @@ public class HomeFragment extends Fragment {
                 if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
                         Manifest.permission.READ_EXTERNAL_STORAGE)) {
                     new AlertDialog.Builder(getActivity())
-                            .setTitle("Permission needed")
-                            .setMessage("We need permissions to access your storage")
-                            .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                            .setTitle(R.string.p_n)
+                            .setMessage(R.string.p_s)
+                            .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     ActivityCompat.requestPermissions(getActivity(),
                                             new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
                                 }
                             })
-                            .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                            .setNegativeButton(R.string.cncl, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
@@ -130,9 +130,9 @@ public class HomeFragment extends Fragment {
             private void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
                 if (requestCode == STORAGE_PERMISSION_CODE) {
                     if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                        Toast.makeText(getActivity(), "Permission GRANTED", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), R.string.p_g, Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(getActivity(), "Permission DENIED", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), R.string.p_d, Toast.LENGTH_SHORT).show();
 
                     }
                 }

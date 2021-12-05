@@ -72,6 +72,26 @@ Meet Gajjar N01391319 Section B
     <string name="t_h">Temperature: 3*C, Humidity: 50.6%</string>
     <string name="tv">TextView</string>
     <string name="fb">feedback</string>
+    <string name="sucess_rg">You have been registered</string>
+    <string name="tryag">Please try again</string>
+    <string name="sucessrgs">Successfully Registered</string>
+    <string name="ty_fb">Thank you for your feedback!</string>
+    <string name="error1">Username can\'t be empty</string>
+    <string name="error2">Please enter right email Address</string>
+    <string name="error3">Enter a right mobile number</string>
+    <string name="s_rg">Successfully Registered</string>
+    <string name="dr_lock">The Door is Locked!</string>
+    <string name="dr_unlock">The Door is Unlocked!</string>
+    <string name="perm1">You have already granted this permission!</string>
+    <string name="p_n">Permission needed</string>
+    <string name="p_s">We need permissions to access your storage</string>
+    <string name="ok">ok</string>
+    <string name="cncl">cancel</string>
+    <string name="p_g">Permission GRANTED</string>
+    <string name="p_d">Permission DENIED</string>
+    <string name="msg">message</string>
+    <string name="ms_on">Motion Sensor is on !!!</string>
+    <string name="ms_off">Motion Sensor is OFF !!!</string>
 
 
 </resources>

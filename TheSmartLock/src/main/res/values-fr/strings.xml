@@ -77,6 +77,26 @@ Meet Gajjar N01391319 Section B
     <string name="t_h">Température : 3*C, Humidité : 50,6 %</string>
     <string name="tv">Affichage</string>
     <string name="fb">retour dinformation</string>
+    <string name="sucess_rg">Vous avez été enregistré</string>
+    <string name="tryag">Veuillez réessayer</string>
+    <string name="sucessrgs">Enregistré avec succès</string>
+    <string name="ty_fb">Merci pour votre avis!</string>
+    <string name="error1">Le nom dutilisateur ne peut pas être vide</string>
+    <string name="error2">Veuillez entrer la bonne adresse e-mail</string>
+    <string name="error3">Entrez un bon numéro de mobile</string>
+    <string name="s_rg">Enregistré avec succès</string>
+    <string name="dr_lock">La porte est verrouillée!</string>
+    <string name="dr_unlock">La porte est déverrouillée !</string>
+    <string name="perm1">Vous avez déjà accordé cette autorisation !</string>
+    <string name="p_n">Autorisation requise</string>
+    <string name="p_s">Nous avons besoin dautorisations pour accéder à votre stockage</string>
+    <string name="ok">daccord</string>
+    <string name="cncl">Annuler</string>
+    <string name="p_g">Permission accordée</string>
+    <string name="p_d">Permission refusée</string>
+    <string name="msg">un message</string>
+    <string name="ms_on">Le capteur de mouvement est activé !!!</string>
+    <string name="ms_off">Le capteur de mouvement est désactivé !!!</string>
 
 
 </resources>

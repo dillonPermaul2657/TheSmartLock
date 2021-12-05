@@ -56,7 +56,7 @@ public class DashboardFragment extends Fragment {
             public void onClick(View v) {
                 relativeLayout.setBackgroundResource(R.color.red);
 //                Toast.makeText(getActivity(),"The Door is Locked!",Toast.LENGTH_SHORT).show();
-                StyleableToast.makeText(getActivity(), "The Door is Locked!",Toast.LENGTH_SHORT ,R.style.door_lock).show();
+                StyleableToast.makeText(getActivity(), getString(R.string.dr_lock),Toast.LENGTH_SHORT ,R.style.door_lock).show();
             }
 
         });
@@ -66,7 +66,7 @@ public class DashboardFragment extends Fragment {
             public void onClick(View v) {
                 relativeLayout.setBackgroundResource(R.color.green);
 //                Toast.makeText(getActivity(),"The Door is Unlocked!",Toast.LENGTH_SHORT).show();
-                StyleableToast.makeText(getActivity(), "The Door is Unlocked!",Toast.LENGTH_SHORT ,R.style.door_unlock).show();
+                StyleableToast.makeText(getActivity(), getString(R.string.dr_unlock),Toast.LENGTH_SHORT ,R.style.door_unlock).show();
 
             }
         });
