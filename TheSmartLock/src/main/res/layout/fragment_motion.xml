@@ -70,7 +70,7 @@
         android:id="@+id/msgTxt"
         android:layout_width="131dp"
         android:layout_height="39dp"
-        android:text="TextView"
+        android:text="@string/tv"
         android:textSize="9pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

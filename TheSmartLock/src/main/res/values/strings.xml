@@ -63,6 +63,15 @@ Meet Gajjar N01391319 Section B
     <string name="password_error">Please enter a password</string>
     <string name="error_invalid_password">Please enter a password with at least 4 characters, at least 1 digit, at least 1 lower case letter, at least 1 upper case letter, at least 1 special character, no spaces</string>
     <string name="contact_number_helppage">Contact Number:</string>
+    <string name="registration">Registration</string>
+    <string name="fn">Full Name</string>
+    <string name="em">Email</string>
+    <string name="psw">Password</string>
+    <string name="rg">Register</string>
+    <string name="fab_st">Click on Fab button to register</string>
+    <string name="t_h">Temperature: 3*C, Humidity: 50.6%</string>
+    <string name="tv">TextView</string>
+    <string name="fb">feedback</string>
 
 
 </resources>

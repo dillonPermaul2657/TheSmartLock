@@ -67,5 +67,16 @@ Meet Gajjar N01391319 Section B
     <string name="password_error">Veuillez entrer un mot de passe</string>
     <string name="error_invalid_password">Veuillez saisir un mot de passe dau moins 4 caractères, au moins 1 chiffre,
         au moins 1 lettre minuscule, au moins 1 lettre majuscule, au moins 1 caractère spécial, pas despace</string>
+    <string name="contact_number_helppage">Contact Number:</string>
+    <string name="registration">Inscription</string>
+    <string name="fn">Nom et prénom</string>
+    <string name="em">E-mail</string>
+    <string name="psw">Mot de passe</string>
+    <string name="rg">Sinscrire</string>
+    <string name="fab_st">Cliquez sur le bouton Fab pour vous inscrire</string>
+    <string name="t_h">Température : 3*C, Humidité : 50,6 %</string>
+    <string name="tv">Affichage</string>
+    <string name="fb">retour dinformation</string>
+
 
 </resources>
