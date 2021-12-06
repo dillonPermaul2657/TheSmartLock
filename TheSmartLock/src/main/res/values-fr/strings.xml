@@ -97,6 +97,7 @@ Meet Gajjar N01391319 Section B
     <string name="msg">un message</string>
     <string name="ms_on">Le capteur de mouvement est activé !!!</string>
     <string name="ms_off">Le capteur de mouvement est désactivé !!!</string>
+    <string name="change_bg">Changement de fond</string>
 
 
 </resources>
