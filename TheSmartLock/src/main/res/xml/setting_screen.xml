@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.divyanshu.com.divyanshu.colorseekbar="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
         android:textColor="#00838F"
@@ -13,6 +14,8 @@
             android:summaryOn="Night mode is activated"
             android:title="Night Mode" />
 
+
+
     </PreferenceCategory>
 
     <PreferenceCategory android:title="Screen Orientation">
@@ -24,6 +27,12 @@
             android:entryValues="@array/items_value"
             android:title="Orientation" />
 
+        <ListPreference
+            android:defaultValue="false"
+            android:key="@string/change_bg"
+            android:entries="@array/items_menu"
+            android:entryValues="@array/items_value"
+            android:title="Change Background" />
 
 
     </PreferenceCategory>
@@ -40,6 +49,7 @@
             />
 
     </PreferenceCategory>
+
 
 
 

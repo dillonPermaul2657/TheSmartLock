@@ -52,6 +52,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-inappmessaging-display'
     implementation 'com.google.firebase:firebase-analytics'
+    compileOnly 'com.divyanshu.colorseekbar:colorseekbar:1.0.2'
     compileOnly 'com.google.firebase:firebase-database:20.0.2'
 
 }

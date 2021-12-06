@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="items_menu">
-        <item> Auto </item>
-        <item> Portrait </item>
-        <item> Landscape </item>
+    <string-array name="items_menu_1">
+        <item> red </item>
+        <item> green </item>
+        <item> blue </item>
 
     </string-array>
 
-    <string-array name="items_value">
+    <string-array name="items_value_1">
         <item> 1 </item>
         <item> 2 </item>
         <item> 3 </item>
 
     </string-array>
-
-
 
 </resources>
