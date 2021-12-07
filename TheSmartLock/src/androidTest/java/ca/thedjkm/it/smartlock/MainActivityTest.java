@@ -51,8 +51,15 @@ public class MainActivityTest {
     @Test
     public void test4(){
         View view = mActivity.findViewById(R.id.check);
-      //  assertTrue("Name",true);
+
         assertEquals("Name","Name");
+
+    }
+
+    @Test
+    public void test5(){
+        View view = mActivity.findViewById(R.id.check);
+        assertTrue("Name",true);
 
     }
 
@@ -60,6 +67,6 @@ public class MainActivityTest {
     @After
     public void tearDown() throws Exception {
 
-      //  mActivity = null;
+       mActivity = null;
     }
 }
