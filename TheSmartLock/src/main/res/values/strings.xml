@@ -93,6 +93,7 @@ Meet Gajjar N01391319 Section B
     <string name="ms_on">Motion Sensor is on !!!</string>
     <string name="ms_off">Motion Sensor is OFF !!!</string>
     <string name="change_bg">Change Background</string>
+    <string name="motion_counter">5</string>
 
 
 </resources>

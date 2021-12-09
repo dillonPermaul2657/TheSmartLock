@@ -64,7 +64,7 @@ public class MotionFragment extends Fragment {
        Button button2=(Button) root.findViewById(R.id.OFF);
 
         MsgTxt = (TextView)root.findViewById(R.id.msgTxt) ;
-       MsgTxt.setText("1");
+      // MsgTxt.setText("1");
         Load_setting();
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID,CHANNEL_NAME,NotificationManager.IMPORTANCE_DEFAULT);
