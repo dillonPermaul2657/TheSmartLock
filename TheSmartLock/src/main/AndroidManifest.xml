@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartLock">
         <activity
+            android:name=".userlist"
+            android:exported="true" />
+        <activity
             android:name=".ui.registration.Registration"
             android:exported="true" />
         <activity
@@ -28,8 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Preference" />
     </application>
 

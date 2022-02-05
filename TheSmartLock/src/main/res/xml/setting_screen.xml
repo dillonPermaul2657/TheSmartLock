@@ -27,28 +27,15 @@
             android:entryValues="@array/items_value"
             android:title="Orientation" />
 
-        <ListPreference
-            android:defaultValue="false"
-            android:key="@string/change_bg"
-            android:entries="@array/items_menu_1"
-            android:entryValues="@array/items_value_1"
-            android:title="Change Background" />
+
 
 
     </PreferenceCategory>
 
 
-    <PreferenceCategory
-        android:key="expandable"
-        android:title="Alerts"
-        >
-        <SwitchPreference
-            android:key="@string/switchpreference"
-            android:title="@string/Notification_label"
-            android:summary="@string/Notification_messge"
-            />
 
-    </PreferenceCategory>
+
+
 
 
 

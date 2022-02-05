@@ -8,6 +8,7 @@ import static android.widget.Toast.*;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
@@ -38,6 +39,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import ca.thedjkm.it.smartlock.R;
+//
+// import ca.thedjkm.it.smartlock.userlist;
 
 public class MotionFragment extends Fragment {
 
@@ -46,9 +49,7 @@ public class MotionFragment extends Fragment {
     private final DatabaseReference mRootReference = firebaseDatabase.getReference();
     private final DatabaseReference mChildReference = mRootReference.child("message");
 
-    private SensorManager sensorManager;
-    private Sensor sensor;
-    private TriggerEventListener triggerEventListener;
+
 
     private static final String CHANNEL_ID = "SIMPLFIED_CODING";
     private static final String CHANNEL_NAME = "SIMPLFIED CODING";
@@ -61,7 +62,7 @@ public class MotionFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_motion,container,false);
         Button btn=(Button) root.findViewById(R.id.ON);
-       Button button2=(Button) root.findViewById(R.id.OFF);
+     //  Button button2=(Button) root.findViewById(R.id.OFF);
 
         MsgTxt = (TextView)root.findViewById(R.id.msgTxt) ;
       // MsgTxt.setText("1");
@@ -74,22 +75,18 @@ public class MotionFragment extends Fragment {
         }
 
 
+//
+//        btn.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                  Intent i = new Intent(getActivity(), userlist.class);
+//                  startActivity(i);
+//
+//            }
+//        });
 
-        btn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                StyleableToast.makeText(getActivity(), "Motion Sensor is ON !!!", R.style.onbtn).show();
-                displayNotification();
-            }
-        });
 
-        button2.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                StyleableToast.makeText(getActivity(), "Motion Sensor is OFF !!!", R.style.offbtn).show();
-
-            }
-        });
 
 
 
@@ -120,7 +117,7 @@ public class MotionFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 Integer message = snapshot.getValue(Integer.class);
-             //   MsgTxt.setText("message appear here..");
+
              //  MsgTxt.setText(message + "times motion detected");
             }
 
@@ -139,16 +136,6 @@ public class MotionFragment extends Fragment {
     // code for shared preference for the landscape mode
     private void Load_setting() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
-//        boolean chk_night = sp.getBoolean("NIGHT", false);
-//        if (chk_night) {
-//         m1.setBackgroundColor(Color.parseColor("#222222"));
-//            marquee.setTextColor(Color.parseColor("#ffffff"));
-//            changeToBlue(m1);
-//
-//        } else {
-//            m1.setBackgroundColor(Color.parseColor("#ffffff"));
-//            marquee.setTextColor(Color.parseColor("#000000"));
-//        }
 
         String orien = sp.getString("ORIENTATION", "false");
         if ("1".equals(orien)) {

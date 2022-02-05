@@ -20,10 +20,13 @@
         <entry key="..\:/SmartLock/TheSmartLock/src/main/res/xml/setting_screen.xml" value="0.264" />
         <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/activity_about.xml" value="0.25416666666666665" />
         <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/activity_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/activity_userlist.xml" value="0.1921875" />
         <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_home.xml" value="0.1793478260869565" />
-        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_motion.xml" value="0.4" />
+        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_motion.xml" value="0.2" />
         <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_review_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/item.xml" value="0.264" />
+        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/xml/setting_screen.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/Kmaha/AndroidStudioProjects/TheSmartLock/TheSmartLock/src/main/res/layout-land/activity_registration.xml" value="0.33" />
         <entry key="..\:/Users/Kmaha/AndroidStudioProjects/TheSmartLock/TheSmartLock/src/main/res/layout-land/fragment_home.xml" value="0.31128747795414463" />
         <entry key="..\:/Users/Kmaha/AndroidStudioProjects/TheSmartLock/TheSmartLock/src/main/res/layout/activity_registration.xml" value="0.20885416666666667" />
