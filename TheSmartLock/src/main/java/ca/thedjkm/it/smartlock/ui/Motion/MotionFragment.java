@@ -4,26 +4,19 @@
 // Meet Gajjar N01391319 Section B
 package ca.thedjkm.it.smartlock.ui.Motion;
 
-import static android.widget.Toast.*;
-
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
-import android.hardware.TriggerEventListener;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -36,8 +29,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
+import ca.thedjkm.it.smartlock.MainActivity2;
 import ca.thedjkm.it.smartlock.R;
 //
 // import ca.thedjkm.it.smartlock.userlist;
@@ -75,16 +68,16 @@ public class MotionFragment extends Fragment {
         }
 
 
-//
-//        btn.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                  Intent i = new Intent(getActivity(), userlist.class);
-//                  startActivity(i);
-//
-//            }
-//        });
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                  Intent i = new Intent(getActivity(), MainActivity2.class);
+                  startActivity(i);
+
+            }
+        });
 
 
 
