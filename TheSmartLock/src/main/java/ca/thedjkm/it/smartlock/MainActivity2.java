@@ -31,7 +31,8 @@ public class MainActivity2 extends AppCompatActivity {
     myListview = findViewById(R.id.myListview);
     studentsList = new ArrayList<>();
 
-    studentDbRef = FirebaseDatabase.getInstance().getReference("Students");
+    // important database child info
+    studentDbRef = FirebaseDatabase.getInstance().getReference("Motion_Sensor");
 
 
     studentDbRef.addValueEventListener(new ValueEventListener() {
