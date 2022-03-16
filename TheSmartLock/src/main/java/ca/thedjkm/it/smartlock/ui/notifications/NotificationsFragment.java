@@ -28,6 +28,7 @@ import androidx.lifecycle.ViewModelProvider;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -38,6 +39,7 @@ import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import ca.thedjkm.it.smartlock.MainActivity;
 import ca.thedjkm.it.smartlock.MainActivity2;
 import ca.thedjkm.it.smartlock.R;
+import ca.thedjkm.it.smartlock.ui.registration.Registration;
 
 public class NotificationsFragment extends Fragment {
 
@@ -47,8 +49,12 @@ public class NotificationsFragment extends Fragment {
     DatabaseReference databaseReference;
     private TextView retrieveTV;
 
+    FirebaseDatabase firebaseDatabase2;
+    DatabaseReference databaseReference2;
+    private TextView retrieveTVTemp;
+
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        // return super.onCreateView(inflater, container, savedInstanceState);
+         //return super.onCreateView(inflater, container, savedInstanceState);
 
         View view = inflater.inflate(R.layout.fragment_notifications, container, false);
 
@@ -57,20 +63,27 @@ public class NotificationsFragment extends Fragment {
         databaseReference = firebaseDatabase.getReference("RFID");
         retrieveTV = view.findViewById(R.id.idTVRetrieveData);
 
+        firebaseDatabase2 = FirebaseDatabase.getInstance();
+        databaseReference2 = firebaseDatabase.getReference("Temp");
+        retrieveTVTemp = view.findViewById(R.id.idTVRetrieveDataTemp);
+
+
+    button.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent in = new Intent(getActivity(),GetTemp.class);
+            startActivity(in);
+        }
+    });
+
+
+
+
+
+
+
         getdata();
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent i = new Intent(getActivity(), GetTemp.class);
-                startActivity(i);
-
-            }
-        });
-
-
-
+        //getTemp();
 
         return view;
     }
@@ -102,6 +115,35 @@ public class NotificationsFragment extends Fragment {
 
     });
 }
+
+
+    private void getTemp() {
+
+        databaseReference2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                // this method is call to get the realtime
+                // updates in the data.
+                // this method is called when the data is
+                // changed in our Firebase console.
+                // below line is for getting the data from
+                // snapshot of our database.
+                String value = snapshot.getValue(String.class);
+
+                // after getting the value we are setting
+                // our value to our text view in below line.
+                retrieveTVTemp.setText(value);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                StyleableToast.makeText(getActivity(), getString(R.string.dr_lock),Toast.LENGTH_SHORT ,R.style.door_lock).show();
+            }
+
+
+
+        });
+    }
 
 
 

@@ -4,23 +4,18 @@
 // Meet Gajjar N01391319 Section B
 package ca.thedjkm.it.smartlock.ui.notifications;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-
-
-import android.os.Bundle;
-
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 
 
 import ca.thedjkm.it.smartlock.R;
@@ -36,7 +31,7 @@ public class GetTemp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_get_temp);
 
 
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -44,15 +39,7 @@ public class GetTemp extends AppCompatActivity {
 
         retrieveTV = findViewById(R.id.idTVRetrieveDataTemp);
 
-        // calling method
-        // for getting data.
-        getdata();
-    }
-
-    private void getdata() {
-
-        // calling add value event listener method
-        // for getting the values from database.
+        //getTemp();
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -71,10 +58,20 @@ public class GetTemp extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                // calling on cancelled method when we receive
-                // any error or we are not able to get the data.
-                Toast.makeText(GetTemp.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Fail to get data",Toast.LENGTH_SHORT).show();
             }
+
+
+
         });
+
+
     }
+
+
+
+
+
+
+
 }
