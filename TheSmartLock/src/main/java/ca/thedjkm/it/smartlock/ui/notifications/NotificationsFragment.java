@@ -9,6 +9,7 @@ import static android.content.Context.NOTIFICATION_SERVICE;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -35,6 +36,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import ca.thedjkm.it.smartlock.MainActivity;
+import ca.thedjkm.it.smartlock.MainActivity2;
 import ca.thedjkm.it.smartlock.R;
 
 public class NotificationsFragment extends Fragment {
@@ -57,7 +59,15 @@ public class NotificationsFragment extends Fragment {
 
         getdata();
 
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent i = new Intent(getActivity(), GetTemp.class);
+                startActivity(i);
+
+            }
+        });
 
 
 

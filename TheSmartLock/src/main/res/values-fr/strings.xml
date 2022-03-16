@@ -98,6 +98,8 @@ Meet Gajjar N01391319 Section B
     <string name="ms_on">Le capteur de mouvement est activé !!!</string>
     <string name="ms_off">Le capteur de mouvement est désactivé !!!</string>
     <string name="change_bg">Changement de fond</string>
+    <string name="t_h1">Temperature: 3*C, Humidity: 50.6%</string>
+    <string name="motion_counter">5</string>
 
 
 </resources>

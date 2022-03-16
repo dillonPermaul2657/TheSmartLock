@@ -68,8 +68,11 @@ Meet Gajjar N01391319 Section B
     <string name="em">Email</string>
     <string name="psw">Password</string>
     <string name="rg">Register</string>
+
     <string name="fab_st">Click on Fab button to register</string>
-    <string name="t_h">Temperature: 3*C, Humidity: 50.6%</string>
+    <string name="t_h">Temperature: 20.3°C </string>
+    <string name="t_h1">Humidity: 50.6% </string>
+
     <string name="tv">TextView</string>
     <string name="fb">feedback</string>
     <string name="sucess_rg">You have been registered</string>

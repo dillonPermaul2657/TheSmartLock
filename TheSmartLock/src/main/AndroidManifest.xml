@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartLock">
         <activity
+            android:name=".ui.notifications.GetTemp"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity2"
             android:exported="true" />
         <activity

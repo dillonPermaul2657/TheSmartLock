@@ -25,6 +25,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -34,6 +35,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -51,6 +53,8 @@ public class HomeFragment extends Fragment {
     private final int STORAGE_PERMISSION_CODE = 1;
     Button buttonRequest;
 
+
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
@@ -60,6 +64,7 @@ public class HomeFragment extends Fragment {
         textView = (TextView) view.findViewById(R.id.marquee);
         textView.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         textView.setSelected(true);
+
 
 
         //code to show the current date and time
@@ -83,7 +88,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
                 Snackbar.make(view, "Register here", Snackbar.LENGTH_SHORT)
                         .setAction("Action", null).show();
-                Intent intent = new Intent(getContext().getApplicationContext(),Registration.class);
+                Intent intent = new Intent(getContext().getApplicationContext(), Registration.class);
                 startActivity(intent);
             }
         });
@@ -140,10 +145,6 @@ public class HomeFragment extends Fragment {
             }
 
 
-
-
-
-
         });
         return view;
     }
@@ -177,6 +178,7 @@ public class HomeFragment extends Fragment {
 
 
     }
+
 
     @Override
     public void onResume() {
