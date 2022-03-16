@@ -18,7 +18,6 @@
         <entry key="..\:/SmartLock/TheSmartLock/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/SmartLock/TheSmartLock/src/main/res/menu/top_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/SmartLock/TheSmartLock/src/main/res/xml/setting_screen.xml" value="0.264" />
-        <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/drawable/onbtn.xml" value="0.20833333333333334" />
         <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/activity_about.xml" value="0.25416666666666665" />
         <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/activity_help.xml" value="0.25416666666666665" />
         <entry key="..\:/TheSmartLock/TheSmartLock/src/main/res/layout/activity_main2.xml" value="0.176" />
@@ -49,6 +48,8 @@
         <entry key="..\:/Users/dillo/AndroidStudioProjects/SmartLock/TheSmartLock/src/main/res/layout/fragment_registration.xml" value="0.3596014492753623" />
         <entry key="..\:/Users/dillo/AndroidStudioProjects/SmartLock/TheSmartLock/src/main/res/layout/fragment_review_screen.xml" value="0.25" />
         <entry key="..\:/Users/dillo/AndroidStudioProjects/SmartLock/TheSmartLock/src/main/res/layout/progressbar_review.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/dillo/AndroidStudioProjects/TheSmartLock/TheSmartLock/src/main/res/layout/fragment_notifications.xml" value="0.2658514492753623" />
+        <entry key="..\:/Users/dillo/AndroidStudioProjects/TheSmartLock/TheSmartLock/src/main/res/layout/list_item.xml" value="0.2658514492753623" />
         <entry key="..\:/sem5-app/TheSmartLock/src/main/res/layout-land/fragment_home.xml" value="0.2019400352733686" />
         <entry key="..\:/sem5-app/TheSmartLock/src/main/res/layout/activity_main.xml" value="0.23550724637681159" />
         <entry key="..\:/sem5-app/TheSmartLock/src/main/res/layout/fragment_dashboard.xml" value="0.23550724637681159" />
