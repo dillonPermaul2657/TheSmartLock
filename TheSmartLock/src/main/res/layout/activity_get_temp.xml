@@ -7,13 +7,13 @@
     tools:context=".ui.notifications.GetTemp">
 
     <TextView
-        android:id="@+id/idTVRetrieveDataTemp"
+        android:id="@+id/tvtemp"
         android:layout_width="269dp"
         android:layout_height="42dp"
         android:layout_centerInParent="true"
-        android:text="Retrieve Data"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
+        android:text="35.3"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

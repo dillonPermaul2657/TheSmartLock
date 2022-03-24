@@ -71,8 +71,8 @@ public class NotificationsFragment extends Fragment {
     button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent in = new Intent(getActivity(),GetTemp.class);
-            startActivity(in);
+            Intent i = new Intent(getActivity(),GetTemp.class);
+            startActivity(i);
         }
     });
 

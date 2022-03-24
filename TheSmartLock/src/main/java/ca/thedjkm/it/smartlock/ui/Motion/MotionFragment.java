@@ -102,27 +102,7 @@ public class MotionFragment extends Fragment {
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        mChildReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                Integer message = snapshot.getValue(Integer.class);
-
-             //  MsgTxt.setText(message + "times motion detected");
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-
-
-        });
-
-    }
 
 
 
