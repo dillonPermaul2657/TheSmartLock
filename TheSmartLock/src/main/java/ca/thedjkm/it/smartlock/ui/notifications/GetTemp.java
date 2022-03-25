@@ -5,6 +5,7 @@
 package ca.thedjkm.it.smartlock.ui.notifications;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,22 +24,29 @@ import ca.thedjkm.it.smartlock.R;
 public class GetTemp extends AppCompatActivity {
 
 TextView textView;
-
+    private TextView temperature,humidity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_temp);
 
-        textView = findViewById(R.id.tvtemp);
+        temperature = findViewById(R.id.tvtemp);
+        humidity = findViewById(R.id.tvhumi1);
+
+
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Temp");
+        DatabaseReference myRef2 = database.getReference("Humidity");
+
+
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String m =snapshot.getValue(String.class);
-                textView.setText(m);
+                Double m1 =snapshot.getValue(Double.class);
+
+                temperature.setText(m1 + " C");
             }
 
             @Override
@@ -46,6 +54,22 @@ TextView textView;
 
             }
         });
+
+        myRef2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Double m2 =snapshot.getValue(Double.class);
+
+                humidity.setText(m2 + " %");
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
 
 
 
