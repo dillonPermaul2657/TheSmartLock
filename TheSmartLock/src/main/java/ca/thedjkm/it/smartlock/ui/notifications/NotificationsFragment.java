@@ -39,11 +39,12 @@ import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import ca.thedjkm.it.smartlock.MainActivity;
 import ca.thedjkm.it.smartlock.MainActivity2;
 import ca.thedjkm.it.smartlock.R;
+import ca.thedjkm.it.smartlock.servo_Activity;
 import ca.thedjkm.it.smartlock.ui.registration.Registration;
 
 public class NotificationsFragment extends Fragment {
 
-    Button button;
+    Button button,servo;
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
@@ -59,13 +60,15 @@ public class NotificationsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_notifications, container, false);
 
         button = (Button) view.findViewById(R.id.NotiButton);
+        servo = (Button) view.findViewById(R.id.servo);
+
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("RFID");
         retrieveTV = view.findViewById(R.id.idTVRetrieveData);
 
         firebaseDatabase2 = FirebaseDatabase.getInstance();
         databaseReference2 = firebaseDatabase.getReference("Temp");
-        retrieveTVTemp = view.findViewById(R.id.idTVRetrieveDataTemp);
+      //  retrieveTVTemp = view.findViewById(R.id.idTVRetrieveDataTemp);
 
 
     button.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +76,16 @@ public class NotificationsFragment extends Fragment {
         public void onClick(View v) {
             Intent i = new Intent(getActivity(),GetTemp.class);
             startActivity(i);
+        }
+    });
+
+    servo.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            Intent in = new Intent(getActivity(), servo_Activity.class);
+            startActivity(in);
+
         }
     });
 

@@ -1,16 +1,10 @@
-// Kamaljit Mahal N01377647 Section B
-// Dillon Permaul N01372657 Section B
-// Janpreet Singh N01361405 Section B
-// Meet Gajjar N01391319 Section B
-package ca.thedjkm.it.smartlock.ui.notifications;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
+package ca.thedjkm.it.smartlock;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,34 +12,31 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+public class servo_Activity extends AppCompatActivity {
 
-import ca.thedjkm.it.smartlock.R;
+    private TextView servo1,lock;
 
-public class GetTemp extends AppCompatActivity {
-
-    private TextView temperature,humidity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_get_temp);
+        setContentView(R.layout.activity_servo);
 
-        temperature = findViewById(R.id.tvtemp);
-        humidity = findViewById(R.id.tvhumi1);
 
+        servo1 = findViewById(R.id.servo112);
+        lock = findViewById(R.id.servo2);
 
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Temp");
-        DatabaseReference myRef2 = database.getReference("Humidity");
-
+        DatabaseReference myRef = database.getReference("Servo_timestamp");
+        DatabaseReference myRef2 = database.getReference("Servo_door_unlock");
 
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Double m1 =snapshot.getValue(Double.class);
+                String s1 =snapshot.getValue(String.class);
 
-                temperature.setText(m1 + "°C ");
+                servo1.setText(s1);
             }
 
             @Override
@@ -57,9 +48,8 @@ public class GetTemp extends AppCompatActivity {
         myRef2.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Double m2 =snapshot.getValue(Double.class);
-
-                humidity.setText(m2 + "%");
+                String s2 =snapshot.getValue(String.class);
+                lock.setText(s2);
             }
 
             @Override
@@ -72,12 +62,16 @@ public class GetTemp extends AppCompatActivity {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
     }
-
-
-
-
-
-
-
 }

@@ -45,7 +45,7 @@
         android:layout_width="206dp"
         android:layout_height="45dp"
         android:layout_centerInParent="true"
-        android:text="Temprature:"
+        android:text="Temperature:"
         android:textAlignment="center"
 
         android:textColor="@color/dark_green"
